@@ -1,0 +1,256 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Multichar_Symbols
+
+%<n%>                                    ! Sustantivo
+%<v%>                                    ! Verbo
+%<adj%>                                  ! Adjetivo
+%<det%>                                  ! Determinante
+%<prn%>                                  ! Pronombre
+
+%<tv%>                                   ! Transitivo
+%<iv%>                                   ! Intransitivo
+
+%<pl%>                                   ! Plural
+%<sg%>                                   ! Singular
+
+%<abs%>                                  ! Absolutivo
+
+%<loc%>                                  ! Locativo
+
+%<pro%>                                  ! Pronombre proclítico
+%<pers%>                                 ! Personal, forma larga
+
+%<dim%>                                  ! Diminutivo
+
+%<p1%>
+%<p2%>
+%<p3%>
+
+%<px1sg%>                                ! Posesivo (1ra singular)
+%<px2sg%>
+%<px3sg%>
+%<px1pl%>
+%<px2pl%>
+%<px3pl%>
+
+%<s_sg1%>                                ! Marcador de sujeto (1ra singular)
+%<s_sg2%>                                ! Marcador de sujeto (2da singular)
+%<s_sg3%>
+%<s_pl1%>
+%<s_pl2%>
+%<s_pl3%>
+
+%<sent%>                                 ! Final de frase
+
+%{o%}                                    ! o 
+%{i%}                                    ! i / 0
+%{h%}                                    ! h / u
+%{u%}                                    ! u / h
+
+%>                                       ! Frontera de morfema
+
+@P.Px.Sg@                                ! Posesivo singular
+@R.Px.Sg@
+@P.Px.Pl@                                ! Posesivo plural
+@R.Px.Pl@
+@D.Px@                                   ! Ninguna posesión
+@P.Sa.Sg@                                ! Sujeto singular
+@R.Sa.Sg@
+@P.Sa.Pl@                                ! Sujeto plural
+@R.Sa.Pl@
+@D.Sa@                                   ! Ningún sujeto 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Root
+
+Sujeto ;
+
+Pronombres ;
+Determinantes ;
+Puntuación ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Sujeto
+
+! sg1: n-
+! pl1: n-S-me / n-poss-S-huan
+
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>               Predicate ;
+@P.Sa.Sg@%<s_sg2%>:@P.Sa.Sg@t%{i%}%>               Predicate ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                       Predicate ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>               Predicate ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>               Predicate ;
+@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                       Predicate ;
+                                                   Predicate ;
+
+LEXICON Predicate
+! Después del sujeto viene o una posesivo o un nominal
+                                                   Possession ; 
+                                                   Nominals ; 
+LEXICON Possession 
+
+@P.Px.Sg@%<px1sg%>:@P.Px.Sg@n%{o%}%>               Nominals ;
+@P.Px.Sg@%<px2sg%>:@P.Px.Sg@m%{o%}%>               Nominals ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
+@P.Px.Pl@%<px1pl%>:@P.Px.Pl@t%{o%}%>               Nominals ;
+@P.Px.Pl@%<px2pl%>:@P.Px.Pl@nim%{o%}%>             Nominals ;
+@P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ;
+
+LEXICON Nominals 
+! Sustantivos, sustantivos relacionales y otras categorias que
+! pueden llevar posesión
+                                                   Nouns ; 
+
+LEXICON PlainPlural
+
+@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>me                # ; ! Las casas
+@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>me          # ; ! Ellos son las casas
+
+LEXICON PossPlural
+
+@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@%>huan        # ; ! Sus casas
+@R.Px.Pl@@R.Sa.Pl@%<pl%>:@R.Px.Pl@@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
+
+LEXICON Plural 
+                                                   PossPlural ;
+                                                   PlainPlural ;
+LEXICON Diminutivo
+
+%<dim%>:%>tzin                                     # ; 
+@D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
+%<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
+%<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
+
+LEXICON Deriv 
+                                                   Diminutivo ; 
+LEXICON TlSuff
+! <s_pl3><px3sg>tipoztl<n> <-- BAD
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+LEXICON ItlSuff
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>itl                     # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+LEXICON TliSuff
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+LEXICON LiSuff
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
+%<n%>:                                             # ;
+%<n%>:%>li                                         Plural ;
+%<n%>:                                             Deriv ;
+
+LEXICON InSuff
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>in                      # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+LEXICON NoSuff
+
+@D.Px@%<n%>%<abs%>:@D.Px@                          # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+!LEXICON Rel 
+!
+!+co%<n%>%<loc%>:%>co # ; ! FIXME: Orth
+!+pan%<n%>%<loc%>:%>pan # ; ! FIXME: Orth
+!+tlan%<n%>%<loc%>:%>tlan # ; ! FIXME: Orth
+!+yan%<n%>%<loc%>:%>yan # ; ! FIXME: Orth
+
+LEXICON DET
+
+%<det%>: # ; 
+
+LEXICON Personales
+!
+! Formas cortas de los pronombres personales singulares.
+!
+nehuatl%<prn%>%<pro%>%<p1%>%<sg%>:neh # ;
+tehuatl%<prn%>%<pro%>%<p2%>%<sg%>:teh # ;
+yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
+
+!
+! Formas largas de los pronombres personales singulares.
+!
+nehuatl%<prn%>%<pers%>%<p1%>%<sg%>:nehuatl # ;
+tehuatl%<prn%>%<pers%>%<p2%>%<sg%>:tehuatl # ;
+yehuatl%<prn%>%<pers%>%<p3%>%<sg%>:yehuatl # ;
+
+!
+! Pronombres personales plurales.
+!
+tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
+nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
+yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Determinantes 
+
+in:in                                           DET ; ! "a" 
+
+LEXICON Pronombres 
+
+Personales ; 
+
+!LEXICON Relacionales 
+!
+!kxi:kxi Rel ; ! FIXME: Orth
+!nacas:nacas Rel ; ! FIXME: Orth
+!jti:jti Rel ; ! FIXME: Orth
+
+LEXICON Nouns
+
+atl:a                                           TlSuff ; ! "agua"
+altepetl:altepe                                 TlSuff ; ! "ciudad, altepetl"
+
+pahtli:pah                                      TliSuff ; ! "medicina"
+
+calli:cal                                       LiSuff ; ! "casa"
+
+!chapolin:chapol                                 InSuff ; ! "chapulín"
+!tamazolin:tamazol                               InSuff ; ! "rana"
+ayotochin:ayotoch                               InSuff ; ! "armadillo"
+
+!tempil:tempil                                   NoSuff ; ! "pico"
+mahtlapal:mahtlapal                             NoSuff ; ! "ala"
+!tonal:tonal                                     NoSuff ; ! "día, sol"
+!caxtil:caxtil                                   NoSuff ; ! "gallina"
+!patox:patox                                     NoSuff ; ! "pato"
+!ixtololo:ixtololo                               NoSuff ; ! "ojo"
+!tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
+
+!xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
+caxitl:cax                                      ItlSuff ; ! "plato"
+
+LEXICON Puntuación
+
+.%<sent%>:. # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%¡%<sent%>:%¡ # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+…%<sent%>:… # ;
+
