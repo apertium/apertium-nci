@@ -257,12 +257,13 @@ LEXICON Nouns
 atl:a                                           N-ATL ; ! "agua"
 altepetl:altepe                                 N-ATL ; ! "ciudad, altepetl"
 xonacatl:xonaca                                 N-ATL ; ! "cebolla"
+ahtlatl:ahtla                                   N-ATL ; ! "atlatl"
 
 pahtli:pah                                      N-PAHTLI ; ! "medicina"
 
 calli:cal                                       N-CALLI ; ! "casa"
 
-!tamazolin:tamazol                               N-AYOTOCHIN ; ! "rana"
+tamazolin:tamazol                               N-AYOTOCHIN ; ! "rana"
 ayotochin:ayotoch                               N-AYOTOCHIN ; ! "armadillo"
 
 !tempil:tempil                                   N-PATOX ; ! "pico"
