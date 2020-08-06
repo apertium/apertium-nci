@@ -7,6 +7,7 @@ Multichar_Symbols
 %<adj%>                                  ! Adjetivo
 %<det%>                                  ! Determinante
 %<prn%>                                  ! Pronombre
+%<num%>                                  ! Numeral
 
 %<tv%>                                   ! Transitivo
 %<iv%>                                   ! Intransitivo
@@ -67,6 +68,7 @@ LEXICON Root
 
 Sujeto ;
 
+Numerales ;
 Pronombres ;
 Determinantes ;
 Puntuación ;
@@ -106,17 +108,18 @@ LEXICON Nominals
 
 LEXICON PlainPlural
 
-@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@%>me                # ; ! Las casas
-@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@%>me          # ; ! Ellos son las casas
+@D.Px@@D.Sa@%<pl%>:@D.Px@@D.Sa@                # ; ! Las casas
+@D.Px@@R.Sa.Pl@%<pl%>:@D.Px@@R.Sa.Pl@          # ; ! Ellos son las casas
 
 LEXICON PossPlural
 
-@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@%>huan        # ; ! Sus casas
-@R.Px.Pl@@R.Sa.Pl@%<pl%>:@R.Px.Pl@@R.Sa.Pl@%>huan  # ; ! Ellos son sus casas
+@R.Px.Pl@@D.Sa@%<pl%>:@R.Px.Pl@@D.Sa@          # ; ! Sus casas
+@R.Px.Pl@@R.Sa.Pl@%<pl%>:@R.Px.Pl@@R.Sa.Pl@    # ; ! Ellos son sus casas
 
 LEXICON Plural 
-                                                   PossPlural ;
-                                                   PlainPlural ;
+:%>huan                                              PossPlural ;
+:%>me                                                PlainPlural ;
+
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
@@ -126,7 +129,13 @@ LEXICON Diminutivo
 
 LEXICON Deriv 
                                                    Diminutivo ; 
-LEXICON TlSuff
+
+LEXICON N-PLUR-REDUP
+
+%<n%>: PlainPlural ; 
+%<n%>:%>huan PossPlural ; 
+
+LEXICON N-ATL
 ! <s_pl3><px3sg>tipoztl<n> <-- BAD
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
@@ -134,35 +143,50 @@ LEXICON TlSuff
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
-LEXICON ItlSuff
+LEXICON N-CAXITL
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>itl                     # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
-LEXICON TliSuff
+LEXICON N-PAHTLI
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
-LEXICON LiSuff
+LEXICON N-CALLI
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
 %<n%>:                                             # ;
 %<n%>:%>li                                         Plural ;
 %<n%>:                                             Deriv ;
 
-LEXICON InSuff
+LEXICON N-CHAPOLIN
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>in                      # ;
+%<n%>:                                             # ;
+%<n%>:%>tin                                        PlainPlural ;
+%<n%>:                                             Deriv ;
+
+LEXICON N-CUALLI
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
+%<n%>:                                             # ;
+%<n%>:%>tin                                        PlainPlural ;
+%<n%>:                                             Deriv ;
+
+
+LEXICON N-AYOTOCHIN
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>in                      # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
-LEXICON NoSuff
+LEXICON N-PATOX
 
 @D.Px@%<n%>%<abs%>:@D.Px@                          # ;
 %<n%>:                                             # ;
@@ -179,6 +203,10 @@ LEXICON NoSuff
 LEXICON DET
 
 %<det%>: # ; 
+
+LEXICON NUM 
+
+%<num%>: # ; 
 
 LEXICON Personales
 !
@@ -213,6 +241,11 @@ LEXICON Pronombres
 
 Personales ; 
 
+LEXICON Numerales 
+
+chiucnāhui:chiucnāhui NUM ; ! "nueve"
+mahtlāctli:mahtlāctli NUM ; ! "diez"
+
 !LEXICON Relacionales 
 !
 !kxi:kxi Rel ; ! FIXME: Orth
@@ -221,27 +254,37 @@ Personales ;
 
 LEXICON Nouns
 
-atl:a                                           TlSuff ; ! "agua"
-altepetl:altepe                                 TlSuff ; ! "ciudad, altepetl"
+atl:a                                           N-ATL ; ! "agua"
+altepetl:altepe                                 N-ATL ; ! "ciudad, altepetl"
+xonacatl:xonaca                                 N-ATL ; ! "cebolla"
 
-pahtli:pah                                      TliSuff ; ! "medicina"
+pahtli:pah                                      N-PAHTLI ; ! "medicina"
 
-calli:cal                                       LiSuff ; ! "casa"
+calli:cal                                       N-CALLI ; ! "casa"
 
-!chapolin:chapol                                 InSuff ; ! "chapulín"
-!tamazolin:tamazol                               InSuff ; ! "rana"
-ayotochin:ayotoch                               InSuff ; ! "armadillo"
+!tamazolin:tamazol                               N-AYOTOCHIN ; ! "rana"
+ayotochin:ayotoch                               N-AYOTOCHIN ; ! "armadillo"
 
-!tempil:tempil                                   NoSuff ; ! "pico"
-mahtlapal:mahtlapal                             NoSuff ; ! "ala"
-!tonal:tonal                                     NoSuff ; ! "día, sol"
-!caxtil:caxtil                                   NoSuff ; ! "gallina"
-!patox:patox                                     NoSuff ; ! "pato"
-!ixtololo:ixtololo                               NoSuff ; ! "ojo"
-!tlapitlanil:tlapitlanil                         NoSuff ; ! "rayo"
+!tempil:tempil                                   N-PATOX ; ! "pico"
+!mahtlapal:mahtlapal                             N-PATOX ; ! "ala"
+!tonal:tonal                                     N-PATOX ; ! "día, sol"
+!caxtil:caxtil                                   N-PATOX ; ! "gallina"
+patox:patox                                     N-PATOX ; ! "pato"
+!ixtololo:ixtololo                               N-PATOX ; ! "ojo"
+!tlapitlanil:tlapitlanil                         N-PATOX ; ! "rayo"
 
-!xihuitl:xi%{u%}%{h%}                            ItlSuff ; ! "hierba, año"
-caxitl:cax                                      ItlSuff ; ! "plato"
+!xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
+caxitl:cax                                      N-CAXITL ; ! "copa"
+
+chapolin:chapol                                 N-CHAPOLIN ; ! "chapulín"
+chapolin:chāchapoltin                           N-PLUR-REDUP ; ! "chapulín"
+
+cualli:cual                                     N-CUALLI ; ! "cosa buena, bien"
+tonalli:tonal                                   N-CUALLI ; ! "día"
+
+! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
+!tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
+!tēuctli:tētēuctin                               N-PLUR-REDUP ;
 
 LEXICON Puntuación
 
