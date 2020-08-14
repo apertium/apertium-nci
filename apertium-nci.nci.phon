@@ -23,17 +23,18 @@ LEXICON Trigraphs
 
 que:ke   Loop "weight: 0.0" ;
 qui:ki   Loop "weight: 0.0" ;
-cua:kʷa  Loop "weight: 0.0" ;
-hua:wa   Loop "weight: 0.0" ;
+cua:kʷɑ  Loop "weight: 0.0" ;
+hua:wɑ   Loop "weight: 0.0" ;
+hui:wi   Loop "weight: 0.0" ;
          Digraphs "weight: 0.6" ;
 
 LEXICON Digraphs
 
-za:sa Loop   "weight: 0.0" ;
+za:sɑ Loop   "weight: 0.0" ;
 zo:so Loop  "weight: 0.0" ;
 ce:se Loop  "weight: 0.0" ;
 ci:si Loop  "weight: 0.0" ;
-ca:ka Loop  "weight: 0.0" ;
+ca:kɑ Loop  "weight: 0.0" ;
 co:ko Loop  "weight: 0.0" ;
 cu:ku Loop  "weight: 0.0" ;
 tz:ts Loop  "weight: 0.0" ;
@@ -59,10 +60,17 @@ z:s  Loop ;
 g:g  Loop ;
 c:k  Loop ;
 
-a:a  Loop ;
+a:ɑ  Loop ;
 e:e  Loop ;
 i:i  Loop ;
 o:o  Loop ;
 u:u  Loop ;
+
+ā:ɑː  Loop ;
+ē:eː  Loop ;
+ī:iː  Loop ;
+ō:oː  Loop ;
+ū:uː  Loop ;
+
      Loop ;
 

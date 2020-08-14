@@ -171,6 +171,13 @@ LEXICON N-CHAPOLIN
 %<n%>:%>tin                                        PlainPlural ;
 %<n%>:                                             Deriv ;
 
+LEXICON N-TLĀCATL
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>tl                      # ;
+%<n%>:                                             # ;
+%<n%>:%>h                                          PlainPlural ;
+%<n%>:                                             Deriv ;
+
 LEXICON N-CUALLI
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>li                      # ;
@@ -254,10 +261,12 @@ mahtlāctli:mahtlāctli NUM ; ! "diez"
 
 LEXICON Nouns
 
-atl:a                                           N-ATL ; ! "agua"
+ātl:ā                                           N-ATL ; ! "agua"
 altepetl:altepe                                 N-ATL ; ! "ciudad, altepetl"
 xonacatl:xonaca                                 N-ATL ; ! "cebolla"
 ahtlatl:ahtla                                   N-ATL ; ! "atlatl"
+ehēcatl:ehēca                                   N-ATL ; ! "aire, viento"
+ōcēlōtl:ōcēlō                                   N-ATL ; ! "jaguar, ocelote"
 
 pahtli:pah                                      N-PAHTLI ; ! "medicina"
 
@@ -286,6 +295,10 @@ tonalli:tonal                                   N-CUALLI ; ! "día"
 ! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
 !tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
 !tēuctli:tētēuctin                               N-PLUR-REDUP ;
+
+tlācatl:tlāca                                   N-TLĀCATL ;
+
+! xihuitl
 
 LEXICON Puntuación
 
