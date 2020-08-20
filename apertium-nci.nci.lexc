@@ -18,9 +18,11 @@ Multichar_Symbols
 %<abs%>                                  ! Absolutivo
 
 %<loc%>                                  ! Locativo
+%<rel%>                                  ! Relacional
 
 %<pro%>                                  ! Pronombre proclítico
 %<pers%>                                 ! Personal, forma larga
+%<itg%>                                  ! Interrogativo
 
 %<dim%>                                  ! Diminutivo
 
@@ -72,6 +74,7 @@ Numerales ;
 Pronombres ;
 Determinantes ;
 Puntuación ;
+Adverbios ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -105,6 +108,7 @@ LEXICON Nominals
 ! Sustantivos, sustantivos relacionales y otras categorias que
 ! pueden llevar posesión
                                                    Nouns ; 
+                                                   Relacionales ; 
 
 LEXICON PlainPlural
 
@@ -200,12 +204,30 @@ LEXICON N-PATOX
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
-!LEXICON Rel 
-!
+LEXICON N-TZONTECON 
+! <s_pl3><px3sg>tipoztl<n> <-- BAD
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>                        # ;
+%<n%>:                                             # ;
+%<n%>:                                             Deriv ;
+
+
+LEXICON Rel 
+
+%<n%>%<rel%>: # ; 
+
 !+co%<n%>%<loc%>:%>co # ; ! FIXME: Orth
 !+pan%<n%>%<loc%>:%>pan # ; ! FIXME: Orth
 !+tlan%<n%>%<loc%>:%>tlan # ; ! FIXME: Orth
 !+yan%<n%>%<loc%>:%>yan # ; ! FIXME: Orth
+
+LEXICON ADV-ITG
+
+%<adv%>%<itg%>: # ; 
+
+LEXICON ADV 
+
+%<adv%>: # ; 
 
 LEXICON DET
 
@@ -253,11 +275,13 @@ LEXICON Numerales
 chiucnāhui:chiucnāhui NUM ; ! "nueve"
 mahtlāctli:mahtlāctli NUM ; ! "diez"
 
-!LEXICON Relacionales 
-!
-!kxi:kxi Rel ; ! FIXME: Orth
-!nacas:nacas Rel ; ! FIXME: Orth
-!jti:jti Rel ; ! FIXME: Orth
+LEXICON Relacionales 
+
+pan:pan Rel ; ! "en"
+tech:tech Rel ; ! "en, con, de, al lado de"
+huan:huan Rel ; ! "con, y"
+ca:ca Rel ; ! "porque, por"
+tlan:tlan Rel ; ! "al lado"
 
 LEXICON Nouns
 
@@ -267,8 +291,19 @@ xonacatl:xonaca                                 N-ATL ; ! "cebolla"
 ahtlatl:ahtla                                   N-ATL ; ! "atlatl"
 ehēcatl:ehēca                                   N-ATL ; ! "aire, viento"
 ōcēlōtl:ōcēlō                                   N-ATL ; ! "jaguar, ocelote"
+xōlētl:xōlē                                     N-ATL ; ! "hongo"
+nanacatl:nanaca                                 N-ATL ; ! "hongo"
+
+iztatl:izta                                     N-ATL ; ! "sal"
+āmatl:āma                                       N-ATL ; ! "papel"
+tletl:tle                                       N-ATL ; ! "fuego, fiebre"
+ācatl:āca                                       N-ATL ; ! "caña"
 
 pahtli:pah                                      N-PAHTLI ; ! "medicina"
+metztli:metz                                    N-PAHTLI ; ! "mes, luna"
+cocoliztli:cocoliz                              N-PAHTLI ; ! "enfermedad"
+tepoztli:tepoz                                  N-PAHTLI ; ! "metal"
+mitotli:mito                                    N-PAHTLI ; ! "danza, baile"                   
 
 calli:cal                                       N-CALLI ; ! "casa"
 
@@ -285,20 +320,44 @@ patox:patox                                     N-PATOX ; ! "pato"
 
 !xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
 caxitl:cax                                      N-CAXITL ; ! "copa"
+tequitl:tequ                                    N-CAXITL ; ! "trabajo, obra, cargo"
 
 chapolin:chapol                                 N-CHAPOLIN ; ! "chapulín"
 chapolin:chāchapoltin                           N-PLUR-REDUP ; ! "chapulín"
 
 cualli:cual                                     N-CUALLI ; ! "cosa buena, bien"
-tonalli:tonal                                   N-CUALLI ; ! "día"
+tōnalli:tōnal                                   N-CUALLI ; ! "día"
+chilmolli:chilmol                               N-CUALLI ; ! "salsa"
 
 ! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
 !tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
 !tēuctli:tētēuctin                               N-PLUR-REDUP ;
 
 tlācatl:tlāca                                   N-TLĀCATL ;
+cihuātl:cihuā                                   N-TLĀCATL ;
+
+tzontecomatl:tzontecoma                         N-TLĀCATL ;
 
 ! xihuitl
+
+tzontecon:tzontecon                             N-TZONTECON ; ! "cabeza"
+
+tōnatiuh:tōnatiuh                               N-TZONTECON ; ! "sol"
+
+LEXICON Adverbios 
+
+quēn:quēn                                       ADV-ITG ; ! "cómo"
+
+āxcān:āxcān                                     ADV ; ! "ahora, hoy"
+azo:azo                                         ADV ; ! "quizás"
+hueliz:hueliz                                   ADV ; ! "quizás"
+occepa:occepa                                   ADV ; ! "otra vez, de nuevo"
+nochipa:nochipa                                 ADV ; ! "para siempre"
+ica:ica                                         ADV ; ! "en algun momento"
+
+niman:niman                                     ADV ; ! "entonces"
+
+zātēpan:zātēpan                                 ADV ; ! "después"
 
 LEXICON Puntuación
 
