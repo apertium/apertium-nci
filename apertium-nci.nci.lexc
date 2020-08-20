@@ -11,6 +11,7 @@ Multichar_Symbols
 
 %<tv%>                                   ! Transitivo
 %<iv%>                                   ! Intransitivo
+%<dv%>                                   ! Ditransitivo
 
 %<pl%>                                   ! Plural
 %<sg%>                                   ! Singular
@@ -44,12 +45,34 @@ Multichar_Symbols
 %<s_pl2%>
 %<s_pl3%>
 
+%<o_sg1%>
+%<o_sg2%>
+%<o_sg3%>
+%<o_pl1%>
+%<o_pl2%>
+%<o_pl3%>
+
+%<o_aa3%>
+%<o_nn3%>
+
+%<i_sg1%>
+%<i_sg2%>
+%<i_sg3%>
+%<i_pl1%>
+%<i_pl2%>
+%<i_pl3%>
+
+
 %<sent%>                                 ! Final de frase
 
 %{o%}                                    ! o 
 %{i%}                                    ! i / 0
 %{h%}                                    ! h / u
 %{u%}                                    ! u / h
+
+%{k%}                                    ! c / q
+%{w%}                                    ! u / 0 
+%{n%}                                    ! n / m 
 
 %>                                       ! Frontera de morfema
 
@@ -68,6 +91,8 @@ Multichar_Symbols
 
 LEXICON Root
 
+Accidentes ;
+
 Sujeto ;
 
 Numerales ;
@@ -75,6 +100,66 @@ Pronombres ;
 Determinantes ;
 Puntuación ;
 Adverbios ; 
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Accidentes
+
+%<past%>:o%>                                       Agr-Subj ;
+                                                   Agr-Subj ;
+
+LEXICON Agr-Subj
+
+@P.Sa.Sg@%<s_sg1%>:@P.Sa.Sg@n%{i%}%>               Agr-Cont ;
+@P.Sa.Sg@%<s_sg2%>:@P.Sa.Sg@t%{i%}%>               Agr-Cont ;
+@P.Sa.Sg@%<s_sg3%>:@P.Sa.Sg@                       Agr-Cont ;
+@P.Sa.Pl@%<s_pl1%>:@P.Sa.Pl@t%{i%}%>               Agr-Cont ;
+@P.Sa.Pl@%<s_pl2%>:@P.Sa.Pl@n%{i%}%>               Agr-Cont ;
+@P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                       Agr-Cont ;
+
+LEXICON Agr-Cont
+                                                   Hon1 ; 
+                                                   Agr-Obj ; 
+
+LEXICON Hon1
+
+%<hon%>:%>on                                       Agr-Obj-Indef ; 
+%<hon%>:%>on                                       IV ; 
+                                                   Agr-Obj-Indef ; 
+                                                   IV ; 
+
+LEXICON Agr-Obj
+
+%<o_sg1%>:%>nēch                                   Hon2 ; 
+%<o_sg2%>:%>mitz                                   Hon2 ; 
+%<o_sg3%>:%>%{k%}%{w%}%{i%}                        Hon2 ; 
+%<o_pl1%>:%>tēch                                   Hon2 ; 
+%<o_pl2%>:%>amēch                                  Hon2 ; 
+%<o_pl3%>:%>qui%{n%}                               Hon2 ; 
+
+LEXICON Hon2
+
+%<hon%>:%>on                                       TV ; 
+                                                   TV ; 
+
+LEXICON Agr-Obj-Indef 
+
+%<o_aa3%>:%>tē                                     TV ; 
+%<o_nn3%>:%>tla                                    TV ; 
+
+
+LEXICON V-IV 
+
+%<v%>%<iv%>: # ; 
+
+LEXICON V-TV 
+
+%<v%>%<tv%>: # ; 
+
+!LEXICON V-DV
+
+!%<v%>%<dv%>: # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -358,6 +443,24 @@ ica:ica                                         ADV ; ! "en algun momento"
 niman:niman                                     ADV ; ! "entonces"
 
 zātēpan:zātēpan                                 ADV ; ! "después"
+
+LEXICON IV 
+
+:%>                                             IVʼ ; 
+
+LEXICON IVʼ
+
+cuīca:cuīca                                     V-IV ; ! "cantar"
+ēhua:ēhua                                       V-IV ; ! "irse, salir"
+
+LEXICON TV 
+
+:%>                                             TVʼ ; 
+
+LEXICON TVʼ
+
+itta:itta                                       V-TV ; ! "ver"
+
 
 LEXICON Puntuación
 
