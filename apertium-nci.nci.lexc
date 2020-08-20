@@ -106,7 +106,7 @@ Adverbios ;
 
 LEXICON Accidentes
 
-%<past%>:o%>                                       Agr-Subj ;
+%<perf%>:ō%>                                       Agr-Subj ;
                                                    Agr-Subj ;
 
 LEXICON Agr-Subj
@@ -452,6 +452,7 @@ LEXICON IVʼ
 
 cuīca:cuīca                                     V-IV ; ! "cantar"
 ēhua:ēhua                                       V-IV ; ! "irse, salir"
+cochi:cochi                                     V-IV ; ! "dormir"
 
 LEXICON TV 
 
