@@ -8,11 +8,12 @@ Multichar_Symbols
 %<det%>                                  ! Determinante
 %<prn%>                                  ! Pronombre
 %<num%>                                  ! Numeral
-%<adv%>                         !
+%<np%>                                   ! Nombre propio
+%<adv%>                                  !
 
 %<tv%>                                   ! Transitivo
 %<iv%>                                   ! Intransitivo
-%<dv%>                                   ! Ditransitivo
+%<tv2%>                                  ! Ditransitivo
 
 %<pl%>                                   ! Plural
 %<sg%>                                   ! Singular
@@ -22,16 +23,20 @@ Multichar_Symbols
 %<loc%>                                  ! Locativo
 %<rel%>                                  ! Relacional
 
+
+%<appl%>                                 ! Aplicativo
+
 %<pro%>                                  ! Pronombre proclítico
 %<pers%>                                 ! Personal, forma larga
 %<itg%>                                  ! Interrogativo
 
 %<dim%>                                  ! Diminutivo
 
-%<abl%>                         !
-%<all%>                         !
+%<abl%>                                  !
+%<all%>                                  !
 
-%<perf%>                         !
+%<perf%>                                 !
+%<imp%>                                  !
 
 %<p1%>
 %<p2%>
@@ -106,6 +111,7 @@ Numerales ;
 Pronombres ;
 Determinantes ;
 Puntuación ;
+Propios ;
 Adverbios ; 
 
 
@@ -115,6 +121,12 @@ LEXICON Accidentes
 
 %<perf%>:ō%>                                       Agr-Subj ;
                                                    Agr-Subj ;
+                                                   Imperativo ;
+
+LEXICON Imperativo 
+
+@P.Sa.Sg@%<imp%>%<s_sg2%>:@P.Sa.Sg@x%{i%}%>     IV ; 
+@P.Sa.Pl@%<imp%>%<s_pl2%>:@P.Sa.Pl@x%{i%}%>     IV ; 
 
 LEXICON Agr-Subj
 
@@ -182,17 +194,23 @@ LEXICON V-PLUR
 @R.Sa.Sg@:@R.Sa.Sg@    #  ; 
 @R.Sa.Pl@:@R.Sa.Pl@%>h # ; 
 
+LEXICON V-SUF 
+
+V-PLUR ; 
+
+%<appl%>:%>lia # ; 
+
 LEXICON V-IV 
 
-%<v%>%<iv%>: V-PLUR ; 
+%<v%>%<iv%>: V-SUF ; 
 
 LEXICON V-TV 
 
-%<v%>%<tv%>: V-PLUR ; 
+%<v%>%<tv%>: V-SUF ; 
 
 LEXICON V-DV
 
-%<v%>%<dv%>: V-PLUR ; 
+%<v%>%<tv2%>: V-SUF ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -329,6 +347,17 @@ LEXICON N-TZONTECON
 %<n%>:                                             # ;
 %<n%>:                                             Deriv ;
 
+LEXICON N-TEŌPIXQUI
+
+@D.Px@%<n%>%<abs%>:@D.Px@                          # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+
+LEXICON NP-MALINTZIN
+
+%<np%>%<ant%>%<f%>%<dim%>: # ; 
 
 LEXICON Rel 
 
@@ -354,6 +383,10 @@ LEXICON DET
 LEXICON NUM 
 
 %<num%>: # ; 
+
+LEXICON PRON-ITG 
+
+%<prn%>%<itg%>: # ; 
 
 LEXICON Personales
 !
@@ -387,6 +420,8 @@ in:in                                           DET ; ! "a"
 LEXICON Pronombres 
 
 Personales ; 
+
+tlen:tlen PRON-ITG ; ! "qué"
 
 LEXICON Numerales 
 
@@ -462,9 +497,19 @@ tzontecon:tzontecon                             N-TZONTECON ; ! "cabeza"
 
 tōnatiuh:tōnatiuh                               N-TZONTECON ; ! "sol"
 
+teōpixqui:teōpixqui                             N-TEŌPIXQUI ; ! "sacerdote"
+
+LEXICON Propios 
+
+Malintzin:Malintzin                             NP-MALINTZIN ; 
+
 LEXICON Adverbios 
 
 quēn:quēn                                       ADV-ITG ; ! "cómo"
+tleīca:tleīca                                   ADV-ITG ; ! "por qué" ! Orth/IDIEZ
+tleīca:tleica                                   ADV-ITG ; ! "por qué" ! Orth/Lockhart
+tleīca:tleic                                    ADV-ITG ; ! "por qué" ! Orth/Molina
+tleīca:tlica                                    ADV-ITG ; ! "por qué" ! Orth/Axolotl
 
 āxcān:āxcān                                     ADV ; ! "ahora, hoy"
 azo:azo                                         ADV ; ! "quizás"
@@ -486,6 +531,7 @@ LEXICON IVʼ
 cuīca:cuīca                                     V-IV ; ! "cantar"
 ēhua:ēhua                                       V-IV ; ! "irse, salir"
 cochi:cochi                                     V-IV ; ! "dormir"
+mēhua:mēhua                                     V-IV ; ! "levantarse"
 
 LEXICON TV 
 
@@ -494,6 +540,7 @@ LEXICON TV
 LEXICON TVʼ
 
 itta:itta                                       V-TV ; ! "ver"
+molhuia:molhui                                 V-TV ; ! "decir (reverencial)"
 
 LEXICON DV 
 
