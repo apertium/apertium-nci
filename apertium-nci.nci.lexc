@@ -25,6 +25,11 @@ Multichar_Symbols
 
 %<pres%>
 %<pret%>
+%<plu%>
+%<fut%>
+%<perf%>                                 !
+%<imp%>                                  !
+%<impf%>                                  !
 
 %<appl%>                                 ! Aplicativo
 
@@ -37,8 +42,6 @@ Multichar_Symbols
 %<abl%>                                  !
 %<all%>                                  !
 
-%<perf%>                                 !
-%<imp%>                                  !
 
 %<p1%>
 %<p2%>
@@ -191,6 +194,11 @@ LEXICON Agr-Obj-Indef
 %<o_aa3%>:%>tē                                     TV ; 
 %<o_nn3%>:%>tla                                    TV ; 
 
+LEXICON FUT
+
+@R.Sa.Sg@%<fut%>:@R.Sa.Sg@%>z    #  ; 
+@R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>queh # ; 
+
 LEXICON PRES
 
 @R.Sa.Sg@%<pres%>:@R.Sa.Sg@    #  ; 
@@ -210,11 +218,13 @@ LEXICON PRET
 LEXICON V-IV-cochi
 
 %<v%>%<iv%>:i    PRES ; 
+%<v%>%<iv%>:i    FUT ; 
 %<v%>%<iv%>:     PRET ; 
 
 LEXICON V-IV-quiza
 
 %<v%>%<iv%>:a  PRES ; 
+%<v%>%<iv%>:a  FUT ; 
 %<v%>%<iv%>:   PRET ; 
 
 
@@ -226,6 +236,7 @@ LEXICON V-IV-quiza
 LEXICON V-TV-itta
 
 %<v%>%<tv%>:a  PRES ; 
+%<v%>%<tv%>:a  FUT ; 
 %<v%>%<tv%>:     PRET ; 
 
 

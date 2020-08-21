@@ -50,11 +50,13 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 
 "Metathesis of -{u}{h} for {h}"
 %{u%}:h <=>  _ %{h%}: %>: i t l ;
+             _ %{h%}: Vow %>: z ; 
 
 !@ x i {u}:h {h}:u >:> i t l
 !@ x i {u}:h {h}:u >:> i t l 
 !@ n {o}:o >:> x i {u}:u {h}:h 
 !@ ō > n {i}:i > > {k}:c {w}:0 {i}:0 > c h ī {h}:u {u}:h > {c}:0
+!@ n {i}:i > > {k}:c {w}:0 {i}:0 > c h ī {u}:h {h}:u a > z
 
 "Metathesis of -{u}{h} for {u}"
 %{h%}:u <=> %{u%}:h _ ; 
