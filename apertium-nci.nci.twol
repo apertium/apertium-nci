@@ -18,6 +18,9 @@ Sets
 Vow   = A E I O U Ā Ē Ī Ō Ū
         a e i o u ā ē ī ō ū ;
 
+LongVow =  Ā Ē Ī Ō Ū
+           ā ē ī ō ū ;
+
 Cns   = b c d f g h j k l m n p q r s t w y z ;
 
 Rules 
@@ -67,7 +70,7 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "Orthographic rule for /k/, -c-/-qu(i)- (2)"
 %{w%}:0 <=> %{k%}:c _ ;
 
-"Orthographic rule for /k/, -c-/-qu(i)- (2)"
+"Orthographic rule for /k/, -c-/-qu(i)- (3)"
 %{i%}:0 <=> %{k%}:c %{w%}:0 _ ;
                     %{w%}:u _ %>: i ; 
 
@@ -77,5 +80,7 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 %{n%}:m <=> _ %>: [ Vow | m | p ]  ;
 
 "Preterite singular -c/-h/-0"
-%{c%}:h <=> :Vow %>: _ ; 
+%{c%}:h <=> [ :Vow - :LongVow ] %>: _ ; 
 
+
+!@ ō > > {k}:c {w}:0 {i}:0 > t l ā l ī > {c}:0

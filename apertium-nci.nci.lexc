@@ -114,6 +114,8 @@ Multichar_Symbols
 
 LEXICON Root
 
+Miscellaneous ;
+
 Accidentes ;
 
 Sujeto ;
@@ -247,6 +249,12 @@ LEXICON V-IV-pāctiā
 %<v%>%<iv%>:ī  FUT ; 
 %<v%>%<iv%>:ī   PRET ; 
 
+LEXICON V-IV-huītz
+
+%<v%>%<iv%>:  PRES ; 
+%<v%>%<iv%>:  FUT ; 
+%<v%>%<iv%>:  PRET ; 
+
 
 
 !LEXICON V-TV 
@@ -259,6 +267,13 @@ LEXICON V-TV-itta
 %<v%>%<tv%>:a  PRES ; 
 %<v%>%<tv%>:a  FUT ; 
 %<v%>%<tv%>:     PRET ; 
+
+LEXICON V-TV-tlāliā
+
+%<v%>%<tv%>:iā  PRES ; 
+%<v%>%<tv%>:ī  FUT ; 
+%<v%>%<tv%>:ī   PRET ; 
+
 
 
 LEXICON V-DV
@@ -475,6 +490,11 @@ yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON Miscellaneous
+
+mā%<mod%>:mā # ; 
+tlā%<mod%>:tlā # ; 
+
 LEXICON Determinantes 
 
 in:in                                           DET ; ! "a" 
@@ -487,6 +507,8 @@ tlen:tlen PRON-ITG ; ! "qué"
 
 LEXICON Numerales 
 
+cē:cē NUM ; ! "uno"
+ōme:ōme NUM ; ! "dos"
 chiucnāhui:chiucnāhui NUM ; ! "nueve"
 mahtlāctli:mahtlāctli NUM ; ! "diez"
 
@@ -546,6 +568,9 @@ chapolin:chāchapoltin                           N-PLUR-REDUP ; ! "chapulín"
 cualli:cual                                     N-CUALLI ; ! "cosa buena, bien"
 tōnalli:tōnal                                   N-CUALLI ; ! "día"
 chilmolli:chilmol                               N-CUALLI ; ! "salsa"
+tlahtōlli:tlahtōl                               N-CUALLI ; ! "palabra, lengua"
+pilli:pil                                       N-CUALLI ; ! "niño"
+cihuapilli:cihuapil                             N-CUALLI ; ! "niña"
 
 ! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
 !tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
@@ -579,6 +604,7 @@ tleīca:tleīca                                   ADV-ITG ; ! "por qué" ! Orth/
 tleīca:tleica                                   ADV-ITG ; ! "por qué" ! Orth/Lockhart
 tleīca:tleic                                    ADV-ITG ; ! "por qué" ! Orth/Molina
 tleīca:tlica                                    ADV-ITG ; ! "por qué" ! Orth/Axolotl
+quēnin:quēnin                                   ADV-ITG ; ! "cómo"
 
 āxcān:āxcān                                     ADV ; ! "ahora, hoy"
 azo:azo                                         ADV ; ! "quizás"
@@ -591,6 +617,11 @@ niman:niman                                     ADV ; ! "entonces"
 
 zātēpan:zātēpan                                 ADV ; ! "después"
 
+yēhua:yēhua                                     ADV ; ! "antes, hace poco, entonces"
+quin:quin                                       ADV ; ! "entonces"
+nochipa:nochipa                                 ADV ; ! "para siempre"
+occepa:occepa                                   ADV ; ! "otra vez, de nuevo"
+
 LEXICON IV 
 
 :%>                                             IVʼ ; 
@@ -601,10 +632,13 @@ cochi:coch                                      V-IV-cochi ; ! "dormir"
 ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"
 cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
+mochīhua:mochīhu                                V-IV-quiza ; ! "pasar"
 quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
 tlahtoā:tlaht                                   V-IV-tlahtoā ; ! "hablar"
 pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"
+yāuh:yāuh                                       V-IV-huītz ; ! "ir"
+huītz:huītz                                     V-IV-huītz ; ! "venir"
 
 LEXICON TV 
 
@@ -618,7 +652,8 @@ chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
 cua:cu                                          V-TV-itta ; ! "comer"
 itoa:ito                                        V-TV-itta ; ! "decir"
 paca:pac                                        V-TV-itta ; ! "lavar"
-pāctiā:pācti                                    V-TV-itta ; ! "gustar"
+pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
+tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner"
 
 LEXICON DV 
 
