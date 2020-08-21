@@ -35,6 +35,8 @@ Multichar_Symbols
 %<impf%>                                  !
 
 %<appl%>                                 ! Aplicativo
+%<caus%>
+%<pass%>
 
 %<pro%>                                  ! Pronombre proclítico
 %<pers%>                                 ! Personal, forma larga
@@ -218,6 +220,8 @@ LEXICON PRET
 @R.Sa.Pl@%<plu%>:@R.Sa.Pl@%>ca%>h # ; 
 
 %<appl%>:%>lia # ; 
+%<caus%>:%>tia # ; 
+%<pass%>:%>lo # ; 
 
 LEXICON V-IV-cochi
 
@@ -236,6 +240,12 @@ LEXICON V-IV-tlahtoā
 %<v%>%<iv%>:oā  PRES ; 
 %<v%>%<iv%>:ō  FUT ; 
 %<v%>%<iv%>:ō   PRET ; 
+
+LEXICON V-IV-pāctiā
+
+%<v%>%<iv%>:iā  PRES ; 
+%<v%>%<iv%>:ī  FUT ; 
+%<v%>%<iv%>:ī   PRET ; 
 
 
 
@@ -492,6 +502,7 @@ LEXICON Nouns
 
 ātl:ā                                           N-ATL ; ! "agua"
 altepetl:altepe                                 N-ATL ; ! "ciudad, altepetl"
+tepētl:tepē                                     N-ATL ; ! "montaña"
 xonacatl:xonaca                                 N-ATL ; ! "cebolla"
 ahtlatl:ahtla                                   N-ATL ; ! "atlatl"
 ehēcatl:ehēca                                   N-ATL ; ! "aire, viento"
@@ -509,6 +520,7 @@ metztli:metz                                    N-PAHTLI ; ! "mes, luna"
 cocoliztli:cocoliz                              N-PAHTLI ; ! "enfermedad"
 tepoztli:tepoz                                  N-PAHTLI ; ! "metal"
 mitotli:mito                                    N-PAHTLI ; ! "danza, baile"                   
+tēuctli:tēuc                                    N-PAHTLI ; ! "señor"
 
 calli:cal                                       N-CALLI ; ! "casa"
 
@@ -591,7 +603,8 @@ cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
 quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
-tlahtoā:tlaht                                  V-IV-tlahtoā ; ! "hablar"
+tlahtoā:tlaht                                   V-IV-tlahtoā ; ! "hablar"
+pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"
 
 LEXICON TV 
 
@@ -604,6 +617,8 @@ itta:itt                                        V-TV-itta ; ! "ver"
 chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
 cua:cu                                          V-TV-itta ; ! "comer"
 itoa:ito                                        V-TV-itta ; ! "decir"
+paca:pac                                        V-TV-itta ; ! "lavar"
+pāctiā:pācti                                    V-TV-itta ; ! "gustar"
 
 LEXICON DV 
 
