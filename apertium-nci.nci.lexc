@@ -15,6 +15,9 @@ Multichar_Symbols
 %<iv%>                                   ! Intransitivo
 %<tv2%>                                  ! Ditransitivo
 
+%<ant%>
+%<top%>
+
 %<pl%>                                   ! Plural
 %<sg%>                                   ! Singular
 
@@ -392,6 +395,14 @@ LEXICON NP-MALINTZIN
 
 %<np%>%<ant%>%<f%>%<dim%>: # ; 
 
+LEXICON NP-JUAN
+
+%<np%>%<ant%>%<m%>: # ; 
+
+LEXICON NP-TENOCHTITLAN
+
+%<np%>%<top%>: # ; 
+
 LEXICON Rel 
 
 %<n%>%<rel%>: # ; 
@@ -504,9 +515,10 @@ patox:patox                                     N-PATOX ; ! "pato"
 !ixtololo:ixtololo                               N-PATOX ; ! "ojo"
 !tlapitlanil:tlapitlanil                         N-PATOX ; ! "rayo"
 
-!xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
+xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
 caxitl:cax                                      N-CAXITL ; ! "copa"
 tequitl:tequ                                    N-CAXITL ; ! "trabajo, obra, cargo"
+xōchitl:xōch                                    N-CAXITL ; ! "flor"
 
 chapolin:chapol                                 N-CHAPOLIN ; ! "chapulín"
 chapolin:chāchapoltin                           N-PLUR-REDUP ; ! "chapulín"
@@ -535,6 +547,10 @@ teōpixqui:teōpixqui                             N-TEŌPIXQUI ; ! "sacerdote"
 LEXICON Propios 
 
 Malintzin:Malintzin                             NP-MALINTZIN ; 
+Juan:Juan                                       NP-JUAN ; 
+Xōchimilco:Xōchimilco                           NP-TENOCHTITLAN ;
+Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
+Mexico:Mexico                                   NP-TENOCHTITLAN ;
 
 LEXICON Adverbios 
 
@@ -566,6 +582,7 @@ cochi:coch                                      V-IV-cochi ; ! "dormir"
 cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
 quiza:quiz                                      V-IV-quiza ; ! ""
+tlacua:tlacu                                    V-IV-quiza ; ! "comer"
 
 LEXICON TV 
 
@@ -576,6 +593,8 @@ LEXICON TVʼ
 molhuia:molhui                                  V-TV-itta ; ! "decir (reverencial)"
 itta:itt                                        V-TV-itta ; ! "ver"
 chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
+cua:cu                                          V-TV-itta ; ! "comer"
+itoa:ito                                        V-TV-itta ; ! "decir"
 
 LEXICON DV 
 
