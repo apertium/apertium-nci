@@ -6,6 +6,9 @@ Alphabet
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u
  %{u%}:u %{u%}:h
+ %{k%}:c %{k%}:q
+ %{w%}:u %{w%}:0
+ %{n%}:n %{n%}:m
   %>:%>  ;
 
 Sets
@@ -18,7 +21,7 @@ Cns   = b c d f g h j k l m n p r s t w y z ;
 Rules 
 
 "Epenthesis of {i} before consonants"
-%{i%}:i <=> _ %>: :Cns ;
+%{i%}:i <=> _ [ %>: ]+ :Cns ;
 
 "Nasal assimilation"
 n:0 <=> _ %>: m ; 
@@ -49,4 +52,14 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "Metathesis of -{h}{u} for {u}"
 %{h%}:u <=> %{u%}:h _ ; 
 
+"Orthographic rule for /k/, -c-/-qu(i)- (1)"
+%{k%}:c <=> _ %{w%}: %{i%}: %>: Cns ;
 
+"Orthographic rule for /k/, -c-/-qu(i)- (2)"
+%{w%}:0 <=> %{k%}:c _ ;
+
+"Orthographic rule for /k/, -c-/-qu(i)- (2)"
+%{i%}:0 <=> %{k%}:c %{w%}:0 _ ;
+
+"Assimilation of n-"
+%{n%}:m <=> _ %>: [ Vow | m | p ]  ;

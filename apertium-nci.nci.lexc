@@ -8,6 +8,7 @@ Multichar_Symbols
 %<det%>                                  ! Determinante
 %<prn%>                                  ! Pronombre
 %<num%>                                  ! Numeral
+%<adv%>                         !
 
 %<tv%>                                   ! Transitivo
 %<iv%>                                   ! Intransitivo
@@ -26,6 +27,11 @@ Multichar_Symbols
 %<itg%>                                  ! Interrogativo
 
 %<dim%>                                  ! Diminutivo
+
+%<abl%>                         !
+%<all%>                         !
+
+%<perf%>                         !
 
 %<p1%>
 %<p2%>
@@ -64,6 +70,7 @@ Multichar_Symbols
 
 
 %<sent%>                                 ! Final de frase
+%<cm%>                         !
 
 %{o%}                                    ! o 
 %{i%}                                    ! i / 0
@@ -119,29 +126,50 @@ LEXICON Agr-Subj
 @P.Sa.Pl@%<s_pl3%>:@P.Sa.Pl@                       Agr-Cont ;
 
 LEXICON Agr-Cont
-                                                   Hon1 ; 
+                                                   Dir1 ; 
                                                    Agr-Obj ; 
 
-LEXICON Hon1
+LEXICON Dir1 
 
-%<hon%>:%>on                                       Agr-Obj-Indef ; 
-%<hon%>:%>on                                       IV ; 
+%<abl%>:%>on                                       Agr-Obj-Indef ; 
+%<abl%>:%>on                                       IV ; 
                                                    Agr-Obj-Indef ; 
                                                    IV ; 
 
 LEXICON Agr-Obj
 
-%<o_sg1%>:%>nēch                                   Hon2 ; 
-%<o_sg2%>:%>mitz                                   Hon2 ; 
-%<o_sg3%>:%>%{k%}%{w%}%{i%}                        Hon2 ; 
-%<o_pl1%>:%>tēch                                   Hon2 ; 
-%<o_pl2%>:%>amēch                                  Hon2 ; 
-%<o_pl3%>:%>qui%{n%}                               Hon2 ; 
+                                                   Agr-Obj-Direct ; 
+                                                   Agr-Obj-Indirect ; 
 
-LEXICON Hon2
+LEXICON Agr-Obj-Direct
 
-%<hon%>:%>on                                       TV ; 
+%<o_sg1%>:%>nēch                                   Dir2 ; 
+%<o_sg2%>:%>mitz                                   Dir2 ; 
+%<o_sg3%>:%>%{k%}%{w%}%{i%}                        Dir2 ; 
+%<o_pl1%>:%>tēch                                   Dir2 ; 
+%<o_pl2%>:%>amēch                                  Dir2 ; 
+%<o_pl3%>:%>qui%{n%}                               Dir2 ; 
+
+LEXICON Agr-Obj-Indirect
+
+%<i_sg1%>:%>nēch                                   Dir2 ; 
+%<i_sg2%>:%>mitz                                   Dir2 ; 
+%<i_sg3%>:%>%{k%}%{w%}%{i%}                        Dir2 ; 
+%<i_pl1%>:%>tēch                                   Dir2 ; 
+%<i_pl2%>:%>amēch                                  Dir2 ; 
+%<i_pl3%>:%>qui%{n%}                               Dir2 ; 
+
+
+LEXICON Dir2
+
+%<abl%>:%>on                                       TV-DV ; 
+%<all%>:%>                                         TV-DV ; 
+                                                   TV-DV ; 
+
+LEXICON TV-DV
+
                                                    TV ; 
+                                                   DV ; 
 
 LEXICON Agr-Obj-Indef 
 
@@ -149,17 +177,22 @@ LEXICON Agr-Obj-Indef
 %<o_nn3%>:%>tla                                    TV ; 
 
 
+LEXICON V-PLUR 
+
+@R.Sa.Sg@:@R.Sa.Sg@    #  ; 
+@R.Sa.Pl@:@R.Sa.Pl@%>h # ; 
+
 LEXICON V-IV 
 
-%<v%>%<iv%>: # ; 
+%<v%>%<iv%>: V-PLUR ; 
 
 LEXICON V-TV 
 
-%<v%>%<tv%>: # ; 
+%<v%>%<tv%>: V-PLUR ; 
 
-!LEXICON V-DV
+LEXICON V-DV
 
-!%<v%>%<dv%>: # ; 
+%<v%>%<dv%>: V-PLUR ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -461,6 +494,15 @@ LEXICON TV
 LEXICON TVʼ
 
 itta:itta                                       V-TV ; ! "ver"
+
+LEXICON DV 
+
+:%>                                             DVʼ ; 
+
+LEXICON DVʼ
+
+maca:maca                                       V-DV ; ! "dar"
+
 
 
 LEXICON Puntuación
