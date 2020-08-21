@@ -201,6 +201,7 @@ LEXICON FUT
 
 @R.Sa.Sg@%<fut%>:@R.Sa.Sg@%>z    #  ; 
 @R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>queh # ; 
+@R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>que # ; 
 
 LEXICON PRES
 
@@ -229,6 +230,13 @@ LEXICON V-IV-quiza
 %<v%>%<iv%>:a  PRES ; 
 %<v%>%<iv%>:a  FUT ; 
 %<v%>%<iv%>:   PRET ; 
+
+LEXICON V-IV-tlahtoā
+
+%<v%>%<iv%>:oā  PRES ; 
+%<v%>%<iv%>:ō  FUT ; 
+%<v%>%<iv%>:ō   PRET ; 
+
 
 
 !LEXICON V-TV 
@@ -583,6 +591,7 @@ cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
 quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
+tlahtoā:tlaht                                  V-IV-tlahtoā ; ! "hablar"
 
 LEXICON TV 
 
