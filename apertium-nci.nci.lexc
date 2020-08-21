@@ -23,6 +23,8 @@ Multichar_Symbols
 %<loc%>                                  ! Locativo
 %<rel%>                                  ! Relacional
 
+%<pres%>
+%<pret%>
 
 %<appl%>                                 ! Aplicativo
 
@@ -85,6 +87,7 @@ Multichar_Symbols
 %{k%}                                    ! c / q
 %{w%}                                    ! u / 0 
 %{n%}                                    ! n / m 
+%{c%}                                    ! c / h / 0
 
 %>                                       ! Frontera de morfema
 
@@ -188,29 +191,48 @@ LEXICON Agr-Obj-Indef
 %<o_aa3%>:%>tē                                     TV ; 
 %<o_nn3%>:%>tla                                    TV ; 
 
+LEXICON PRES
 
-LEXICON V-PLUR 
+@R.Sa.Sg@%<pres%>:@R.Sa.Sg@    #  ; 
+@R.Sa.Pl@%<pres%>:@R.Sa.Pl@%>h # ; 
+@R.Sa.Sg@%<impf%>:@R.Sa.Sg@%>ya    #  ; 
+@R.Sa.Pl@%<impf%>:@R.Sa.Pl@%>ya%>h # ; 
 
-@R.Sa.Sg@:@R.Sa.Sg@    #  ; 
-@R.Sa.Pl@:@R.Sa.Pl@%>h # ; 
+LEXICON PRET
 
-LEXICON V-SUF 
-
-V-PLUR ; 
+@R.Sa.Sg@%<pret%>:@R.Sa.Sg@%>%{c%}   #  ;  
+@R.Sa.Pl@%<pret%>:@R.Sa.Pl@%>queh # ; 
+@R.Sa.Sg@%<plu%>:@R.Sa.Sg@%>ca   #  ;  
+@R.Sa.Pl@%<plu%>:@R.Sa.Pl@%>ca%>h # ; 
 
 %<appl%>:%>lia # ; 
 
-LEXICON V-IV 
+LEXICON V-IV-cochi
 
-%<v%>%<iv%>: V-SUF ; 
+%<v%>%<iv%>:i    PRES ; 
+%<v%>%<iv%>:     PRET ; 
 
-LEXICON V-TV 
+LEXICON V-IV-quiza
 
-%<v%>%<tv%>: V-SUF ; 
+%<v%>%<iv%>:a  PRES ; 
+%<v%>%<iv%>:   PRET ; 
+
+
+!LEXICON V-TV 
+!
+!%<v%>%<tv%>:     PRES ; 
+!%<v%>%<tv%>:     PRET ; 
+
+LEXICON V-TV-itta
+
+%<v%>%<tv%>:a  PRES ; 
+%<v%>%<tv%>:     PRET ; 
+
 
 LEXICON V-DV
 
-%<v%>%<tv2%>: V-SUF ; 
+%<v%>%<tv2%>:     PRES ; 
+%<v%>%<tv2%>:     PRET ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -528,10 +550,11 @@ LEXICON IV
 
 LEXICON IVʼ
 
-cuīca:cuīca                                     V-IV ; ! "cantar"
-ēhua:ēhua                                       V-IV ; ! "irse, salir"
-cochi:cochi                                     V-IV ; ! "dormir"
-mēhua:mēhua                                     V-IV ; ! "levantarse"
+cochi:coch                                      V-IV-cochi ; ! "dormir"
+ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"
+cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
+mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
+quiza:quiz                                      V-IV-quiza ; ! ""
 
 LEXICON TV 
 
@@ -539,8 +562,9 @@ LEXICON TV
 
 LEXICON TVʼ
 
-itta:itta                                       V-TV ; ! "ver"
-molhuia:molhui                                 V-TV ; ! "decir (reverencial)"
+molhuia:molhui                                  V-TV-itta ; ! "decir (reverencial)"
+itta:itt                                        V-TV-itta ; ! "ver"
+chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
 
 LEXICON DV 
 

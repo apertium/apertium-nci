@@ -10,6 +10,7 @@ Alphabet
  %{k%}:c %{k%}:q
  %{w%}:u %{w%}:0
  %{n%}:n %{n%}:m
+ %{c%}:h %{c%}:0
   %>:%>  ;
 
 Sets
@@ -17,12 +18,16 @@ Sets
 Vow   = A E I O U Ā Ē Ī Ō Ū
         a e i o u ā ē ī ō ū ;
 
-Cns   = b c d f g h j k l m n p r s t w y z ;
+Cns   = b c d f g h j k l m n p q r s t w y z ;
 
 Rules 
 
 "Epenthesis of {i} before consonants"
 %{i%}:i <=> _ [ %>: ]+ :Cns ;
+    except 
+      %{k%}: %{w%}: _ ;
+
+!@ t {i}:i > > {k}:c {w}:0 {i}:0 > c h ī h u a
 
 "Nasal assimilation"
 n:0 <=> _ %>: m ; 
@@ -43,14 +48,15 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 !define WrewritePt1 W -> u h  || Vowels* _ "^" NominalFlags* .#. ;
 !define WrewritePt2 W -> h u i || _ NominalFlags* "^" t l .#. ;
 
-"Metathesis of -{h}{u} for {h}"
+"Metathesis of -{u}{h} for {h}"
 %{u%}:h <=>  _ %{h%}: %>: i t l ;
 
 !@ x i {u}:h {h}:u >:> i t l
 !@ x i {u}:h {h}:u >:> i t l 
 !@ n {o}:o >:> x i {u}:u {h}:h 
+!@ ō > n {i}:i > > {k}:c {w}:0 {i}:0 > c h ī {h}:u {u}:h > {c}:0
 
-"Metathesis of -{h}{u} for {u}"
+"Metathesis of -{u}{h} for {u}"
 %{h%}:u <=> %{u%}:h _ ; 
 
 "Orthographic rule for /k/, -c-/-qu(i)- (1)"
@@ -61,6 +67,13 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 
 "Orthographic rule for /k/, -c-/-qu(i)- (2)"
 %{i%}:0 <=> %{k%}:c %{w%}:0 _ ;
+                    %{w%}:u _ %>: i ; 
+
+!@ {k}:q {w}:u {i}:0 > i t t a
 
 "Assimilation of n-"
 %{n%}:m <=> _ %>: [ Vow | m | p ]  ;
+
+"Preterite singular -c/-h/-0"
+%{c%}:h <=> :Vow %>: _ ; 
+
