@@ -428,6 +428,11 @@ LEXICON NP-MALINTZIN
 
 %<np%>%<ant%>%<f%>%<dim%>: # ; 
 
+LEXICON NP-ACOLHUA
+
+%<np%>%<ant%>%<m%>: # ; 
+
+
 LEXICON NP-JUAN
 
 %<np%>%<ant%>%<m%>: # ; 
@@ -495,6 +500,13 @@ LEXICON Miscellaneous
 mā%<mod%>:mā # ; 
 tlā%<mod%>:tlā # ; 
 
+nozo%<cnjcoo%>:nozo # ;  ! "o"
+anozo%<cnjcoo%>:anozo # ; ! "o"
+manozo%<cnjsub%>:manozo # ; ! "aunque"
+
+ic%<ord%>:ic # ; ! "" ! TODO: Other things too
+inīc%<ord%>:inīc # ; ! ""  ! TODO: Is this in<det>+ic<ord> ?
+
 LEXICON Determinantes 
 
 in:in                                           DET ; ! "a" 
@@ -531,6 +543,7 @@ ehēcatl:ehēca                                   N-ATL ; ! "aire, viento"
 ōcēlōtl:ōcēlō                                   N-ATL ; ! "jaguar, ocelote"
 xōlētl:xōlē                                     N-ATL ; ! "hongo"
 nanacatl:nanaca                                 N-ATL ; ! "hongo"
+cemanāhuatl:cemanāhua                           N-ATL ; ! "universo, mundo"
 
 iztatl:izta                                     N-ATL ; ! "sal"
 āmatl:āma                                       N-ATL ; ! "papel"
@@ -589,10 +602,16 @@ tōnatiuh:tōnatiuh                               N-TZONTECON ; ! "sol"
 
 teōpixqui:teōpixqui                             N-TEŌPIXQUI ; ! "sacerdote"
 
+cemānāhuac:cemānāhuac                           N-TZONTECON ; ! "universo, mundo"
+ānāhuac:ānāhuac                                 N-TZONTECON ; ! "algo al lado del agua"
+
+
 LEXICON Propios 
 
 Malintzin:Malintzin                             NP-MALINTZIN ; 
 Juan:Juan                                       NP-JUAN ; 
+Acolhua:Acolhua                                 NP-ACOLHUA ; 
+Xolotl:Xolotl                                   NP-ACOLHUA ; 
 Xōchimilco:Xōchimilco                           NP-TENOCHTITLAN ;
 Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
 Mexico:Mexico                                   NP-TENOCHTITLAN ;
@@ -615,7 +634,10 @@ ica:ica                                         ADV ; ! "en algun momento"
 
 niman:niman                                     ADV ; ! "entonces"
 
+nicān:nicān                                     ADV ; ! "aquí"
+
 zātēpan:zātēpan                                 ADV ; ! "después"
+zan:zan                                         ADV ; ! "sólo"
 
 yēhua:yēhua                                     ADV ; ! "antes, hace poco, entonces"
 quin:quin                                       ADV ; ! "entonces"
@@ -629,6 +651,7 @@ LEXICON IV
 LEXICON IVʼ
 
 cochi:coch                                      V-IV-cochi ; ! "dormir"
+miqui:miqu                                     V-IV-cochi ; ! "morir"
 ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"
 cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
