@@ -507,6 +507,8 @@ manozo%<cnjsub%>:manozo # ; ! "aunque"
 ic%<ord%>:ic # ; ! "" ! TODO: Other things too
 inīc%<ord%>:inīc # ; ! ""  ! TODO: Is this in<det>+ic<ord> ?
 
+ca%<mod%>:ca # ; ! "es un hecho que"
+
 LEXICON Determinantes 
 
 in:in                                           DET ; ! "a" 
@@ -556,6 +558,8 @@ cocoliztli:cocoliz                              N-PAHTLI ; ! "enfermedad"
 tepoztli:tepoz                                  N-PAHTLI ; ! "metal"
 mitotli:mito                                    N-PAHTLI ; ! "danza, baile"                   
 tēuctli:tēuc                                    N-PAHTLI ; ! "señor"
+oquichtli:oquich                                N-PAHTLI ; ! "hombre"
+tōchtli:tōch                                    N-PAHTLI ; ! "conejo"
 
 calli:cal                                       N-CALLI ; ! "casa"
 
@@ -575,6 +579,8 @@ caxitl:cax                                      N-CAXITL ; ! "copa"
 tequitl:tequ                                    N-CAXITL ; ! "trabajo, obra, cargo"
 xōchitl:xōch                                    N-CAXITL ; ! "flor"
 
+michin:mich                                     N-CHAPOLIN ; ! "pescado"
+
 chapolin:chapol                                 N-CHAPOLIN ; ! "chapulín"
 chapolin:chāchapoltin                           N-PLUR-REDUP ; ! "chapulín"
 
@@ -591,6 +597,8 @@ cihuapilli:cihuapil                             N-CUALLI ; ! "niña"
 
 tlācatl:tlāca                                   N-TLĀCATL ;
 cihuātl:cihuā                                   N-TLĀCATL ;
+mexicatl:mexica                                 N-TLĀCATL ;
+otomitl:otomi                                   N-TLĀCATL ;
 
 tzontecomatl:tzontecoma                         N-TLĀCATL ;
 
@@ -599,6 +607,8 @@ tzontecomatl:tzontecoma                         N-TLĀCATL ;
 tzontecon:tzontecon                             N-TZONTECON ; ! "cabeza"
 
 tōnatiuh:tōnatiuh                               N-TZONTECON ; ! "sol"
+
+chichi:chichi                                   N-TZONTECON ; ! "perro"
 
 teōpixqui:teōpixqui                             N-TEŌPIXQUI ; ! "sacerdote"
 
@@ -652,12 +662,15 @@ LEXICON IVʼ
 
 cochi:coch                                      V-IV-cochi ; ! "dormir"
 miqui:miqu                                     V-IV-cochi ; ! "morir"
+yōli:yōl                                        V-IV-cochi ; ! "vivir"
+tzatzi:tzatz                                    V-IV-cochi ; ! "gritar"
 ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"
 cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
 mochīhua:mochīhu                                V-IV-quiza ; ! "pasar"
 quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
+chōca:chōc                                      V-IV-quiza ; ! "llorar"
 tlahtoā:tlaht                                   V-IV-tlahtoā ; ! "hablar"
 pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"
 yāuh:yāuh                                       V-IV-huītz ; ! "ir"
