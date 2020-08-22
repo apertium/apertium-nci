@@ -135,6 +135,7 @@ LEXICON Accidentes
 %<perf%>:ō%>                                       Agr-Subj ;
                                                    Agr-Subj ;
                                                    Imperativo ;
+                                                   IV ; 
 
 LEXICON Imperativo 
 
@@ -221,6 +222,9 @@ LEXICON PRET
 @R.Sa.Sg@%<plu%>:@R.Sa.Sg@%>ca   #  ;  
 @R.Sa.Pl@%<plu%>:@R.Sa.Pl@%>ca%>h # ; 
 
+@D.Sa@%<pp%>%<sg%>:@D.Sa@%>qui    #  ; 
+@D.Sa@%<pp%>%<sg%>:@D.Sa@%>queh    #  ; 
+
 %<appl%>:%>lia # ; 
 %<caus%>:%>tia # ; 
 %<pass%>:%>lo # ; 
@@ -230,6 +234,12 @@ LEXICON V-IV-cochi
 %<v%>%<iv%>:i    PRES ; 
 %<v%>%<iv%>:i    FUT ; 
 %<v%>%<iv%>:     PRET ; 
+
+!LEXICON V-IV-miqui
+!
+!%<v%>%<iv%>:%{i%}    PRES ; 
+!%<v%>%<iv%>:%{i%}    FUT ; 
+!%<v%>%<iv%>:     PRET ; 
 
 LEXICON V-IV-quiza
 
@@ -306,7 +316,7 @@ LEXICON Possession
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@m%{o%}%>               Nominals ;
 @P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
 @P.Px.Pl@%<px1pl%>:@P.Px.Pl@t%{o%}%>               Nominals ;
-@P.Px.Pl@%<px2pl%>:@P.Px.Pl@nim%{o%}%>             Nominals ;
+@P.Px.Pl@%<px2pl%>:@P.Px.Pl@am%{o%}%>             Nominals ;
 @P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ;
 
 LEXICON Nominals 
@@ -365,6 +375,14 @@ LEXICON N-PAHTLI
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
+
+LEXICON N-TEŌPANTLI
+! TODO: locativo en -pan, i no en -panco
+@D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
 
 LEXICON N-CALLI
 
@@ -500,6 +518,9 @@ LEXICON Miscellaneous
 mā%<mod%>:mā # ; 
 tlā%<mod%>:tlā # ; 
 
+auh%<cnjcoo%>:auh # ;  ! "y, pero"
+īhuān%<cnjcoo%>:īhuān # ; ! "y, con esto"
+
 nozo%<cnjcoo%>:nozo # ;  ! "o"
 anozo%<cnjcoo%>:anozo # ; ! "o"
 manozo%<cnjsub%>:manozo # ; ! "aunque"
@@ -523,21 +544,34 @@ LEXICON Numerales
 
 cē:cē NUM ; ! "uno"
 ōme:ōme NUM ; ! "dos"
+ēyi:ēyi NUM ; ! ""
+nāhui:nāhui NUM ; ! ""
+mācuilli:mācuilli NUM ; ! ""
+chicuacē:chicuacē NUM ; ! ""
+chicōme:chicōme NUM ; ! ""
+chicuēyi:chicuēyi NUM ; ! ""
+
 chiucnāhui:chiucnāhui NUM ; ! "nueve"
 mahtlāctli:mahtlāctli NUM ; ! "diez"
+
+caxtolli:caxtolli NUM ; ! ""
+
+cempōhualli:cempōhualli NUM ; ! ""
 
 LEXICON Relacionales 
 
 pan:pan Rel ; ! "en"
 tech:tech Rel ; ! "en, con, de, al lado de"
-huan:huan Rel ; ! "con, y"
+huān:huān Rel ; ! "con, y"
 ca:ca Rel ; ! "porque, por"
 tlan:tlan Rel ; ! "al lado"
+cpac:cpac Rel ; ! "sobre, encima"
+chān:chān Rel ; ! "cal"
 
 LEXICON Nouns
 
 ātl:ā                                           N-ATL ; ! "agua"
-altepetl:altepe                                 N-ATL ; ! "ciudad, altepetl"
+āltepētl:āltepē                                 N-ATL ; ! "ciudad, altepetl"
 tepētl:tepē                                     N-ATL ; ! "montaña"
 xonacatl:xonaca                                 N-ATL ; ! "cebolla"
 ahtlatl:ahtla                                   N-ATL ; ! "atlatl"
@@ -560,8 +594,11 @@ mitotli:mito                                    N-PAHTLI ; ! "danza, baile"
 tēuctli:tēuc                                    N-PAHTLI ; ! "señor"
 oquichtli:oquich                                N-PAHTLI ; ! "hombre"
 tōchtli:tōch                                    N-PAHTLI ; ! "conejo"
+teōpantli:teōpan                                N-TEŌPANTLI ; ! "iglesia"
+tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
 
 calli:cal                                       N-CALLI ; ! "casa"
+mīlli:mīl                                       N-CALLI ; ! "campo"
 
 tamazolin:tamazol                               N-AYOTOCHIN ; ! "rana"
 ayotochin:ayotoch                               N-AYOTOCHIN ; ! "armadillo"
@@ -575,6 +612,7 @@ patox:patox                                     N-PATOX ; ! "pato"
 !tlapitlanil:tlapitlanil                         N-PATOX ; ! "rayo"
 
 xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
+cuahuitl:cua%{u%}%{h%}                          N-CAXITL ; ! "árbol"
 caxitl:cax                                      N-CAXITL ; ! "copa"
 tequitl:tequ                                    N-CAXITL ; ! "trabajo, obra, cargo"
 xōchitl:xōch                                    N-CAXITL ; ! "flor"
@@ -590,6 +628,7 @@ chilmolli:chilmol                               N-CUALLI ; ! "salsa"
 tlahtōlli:tlahtōl                               N-CUALLI ; ! "palabra, lengua"
 pilli:pil                                       N-CUALLI ; ! "niño"
 cihuapilli:cihuapil                             N-CUALLI ; ! "niña"
+mācēhualli:mācēhual                             N-CUALLI ; ! "campesino"
 
 ! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
 !tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
@@ -622,9 +661,13 @@ Malintzin:Malintzin                             NP-MALINTZIN ;
 Juan:Juan                                       NP-JUAN ; 
 Acolhua:Acolhua                                 NP-ACOLHUA ; 
 Xolotl:Xolotl                                   NP-ACOLHUA ; 
-Xōchimilco:Xōchimilco                           NP-TENOCHTITLAN ;
+Xōchimīlco:Xōchimīlco                           NP-TENOCHTITLAN ;
 Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
 Mexico:Mexico                                   NP-TENOCHTITLAN ;
+Cuauhnāhuac:Cuauhnāhuac                         NP-TENOCHTITLAN ;
+Tlaxcallān:Tlaxcallān                           NP-TENOCHTITLAN ; 
+Chapōltepēc:Chapōltepēc                         NP-TENOCHTITLAN ;
+Ācapōlco:Ācapōlco                               NP-TENOCHTITLAN ;
 
 LEXICON Adverbios 
 
@@ -645,6 +688,9 @@ ica:ica                                         ADV ; ! "en algun momento"
 niman:niman                                     ADV ; ! "entonces"
 
 nicān:nicān                                     ADV ; ! "aquí"
+oncān:oncān                                     ADV ; ! "ahí"
+ōmpa:ōmpa                                       ADV ; ! "allá"
+
 
 zātēpan:zātēpan                                 ADV ; ! "después"
 zan:zan                                         ADV ; ! "sólo"
@@ -654,6 +700,8 @@ quin:quin                                       ADV ; ! "entonces"
 nochipa:nochipa                                 ADV ; ! "para siempre"
 occepa:occepa                                   ADV ; ! "otra vez, de nuevo"
 
+cenca:cenca                                     ADV ; ! "muy"
+
 LEXICON IV 
 
 :%>                                             IVʼ ; 
@@ -661,7 +709,8 @@ LEXICON IV
 LEXICON IVʼ
 
 cochi:coch                                      V-IV-cochi ; ! "dormir"
-miqui:miqu                                     V-IV-cochi ; ! "morir"
+!miqui:mi%{k%}%{w%}                              V-IV-miqui ; ! "morir"
+miqui:miqu                                      V-IV-cochi ; ! "morir" ! mic-qui
 yōli:yōl                                        V-IV-cochi ; ! "vivir"
 tzatzi:tzatz                                    V-IV-cochi ; ! "gritar"
 ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"

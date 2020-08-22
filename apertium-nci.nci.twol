@@ -67,6 +67,10 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "Orthographic rule for /k/, -c-/-qu(i)- (1)"
 %{k%}:c <=> _ %{w%}: %{i%}: %>: Cns ;
 
+!@ > m i {k}:c {w}:0 {i}:0 > q u i
+
+!@ n {i}:i > > m i {k}:q {w}:u {i}:i > z
+
 "Orthographic rule for /k/, -c-/-qu(i)- (2)"
 %{w%}:0 <=> %{k%}:c _ ;
 
