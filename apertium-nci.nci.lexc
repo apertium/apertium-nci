@@ -567,6 +567,14 @@ ca:ca Rel ; ! "porque, por"
 tlan:tlan Rel ; ! "al lado"
 cpac:cpac Rel ; ! "sobre, encima"
 chān:chān Rel ; ! "cal"
+nāhuac:nāhuac Rel ; ! "al lado de"
+tloc:tloc Rel ; ! "al lado de"
+tzālan:tzālan Rel ; ! "entre"
+nepantla:nepantla Rel ; ! "en medio de"
+huīc:huīc Rel ; ! "contra"
+pal:pal Rel ; ! "gracias a"
+pampa:pampa Rel ; ! "por"
+teuh:teuh Rel ; ! "a manera de, como"
 
 LEXICON Nouns
 
@@ -599,6 +607,7 @@ tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
 
 calli:cal                                       N-CALLI ; ! "casa"
 mīlli:mīl                                       N-CALLI ; ! "campo"
+teōcalli:teōcal                                 N-CALLI ; ! "templo"
 
 tamazolin:tamazol                               N-AYOTOCHIN ; ! "rana"
 ayotochin:ayotoch                               N-AYOTOCHIN ; ! "armadillo"
@@ -640,6 +649,7 @@ mexicatl:mexica                                 N-TLĀCATL ;
 otomitl:otomi                                   N-TLĀCATL ;
 
 tzontecomatl:tzontecoma                         N-TLĀCATL ;
+pitzōnacatl:pitzōnaca                           N-TLĀCATL ; ! "carne de puerco"
 
 ! xihuitl
 
@@ -667,6 +677,7 @@ Mexico:Mexico                                   NP-TENOCHTITLAN ;
 Cuauhnāhuac:Cuauhnāhuac                         NP-TENOCHTITLAN ;
 Tlaxcallān:Tlaxcallān                           NP-TENOCHTITLAN ; 
 Chapōltepēc:Chapōltepēc                         NP-TENOCHTITLAN ;
+Ānāhuac:Ānāhuac                                 NP-TENOCHTITLAN ; 
 Ācapōlco:Ācapōlco                               NP-TENOCHTITLAN ;
 
 LEXICON Adverbios 
