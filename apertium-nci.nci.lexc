@@ -127,6 +127,8 @@ Puntuación ;
 Propios ;
 Adverbios ; 
 
+Irregulares ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -208,6 +210,9 @@ LEXICON FUT
 @R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>queh # ; 
 @R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>que # ; 
 
+@D.Sa@%<actio%>:@D.Sa@%>ztli    #  ; 
+@D.Sa@%<actio%>:@D.Sa@%>liztli    #  ; 
+
 LEXICON PRES
 
 @R.Sa.Sg@%<pres%>:@R.Sa.Sg@    #  ; 
@@ -272,6 +277,13 @@ LEXICON V-IV-huītz
 !%<v%>%<tv%>:     PRES ; 
 !%<v%>%<tv%>:     PRET ; 
 
+LEXICON V-TV-mati
+
+%<v%>%<tv%>:i  PRES ; 
+%<v%>%<tv%>:i  FUT ; 
+%<v%>%<tv%>:     PRET ; 
+
+
 LEXICON V-TV-itta
 
 %<v%>%<tv%>:a  PRES ; 
@@ -314,7 +326,7 @@ LEXICON Possession
 
 @P.Px.Sg@%<px1sg%>:@P.Px.Sg@n%{o%}%>               Nominals ;
 @P.Px.Sg@%<px2sg%>:@P.Px.Sg@m%{o%}%>               Nominals ;
-@P.Px.Sg@%<px3sg%>:@P.Px.Sg@i%>                    Nominals ;
+@P.Px.Sg@%<px3sg%>:@P.Px.Sg@ī%>                    Nominals ;
 @P.Px.Pl@%<px1pl%>:@P.Px.Pl@t%{o%}%>               Nominals ;
 @P.Px.Pl@%<px2pl%>:@P.Px.Pl@am%{o%}%>             Nominals ;
 @P.Px.Pl@%<px3pl%>:@P.Px.Pl@im%>                   Nominals ;
@@ -342,12 +354,18 @@ LEXICON Plural
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
+%<dim%>:%>tzin                                     Locativo ; 
 @D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
 %<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
 
+LEXICON Locativo
+
+%<loc%>:%>c%{o%}                                   # ;
+
 LEXICON Deriv 
                                                    Diminutivo ; 
+                                                   Locativo ; 
 
 LEXICON N-PLUR-REDUP
 
@@ -365,6 +383,13 @@ LEXICON N-ATL
 LEXICON N-CAXITL
 
 @D.Px@%<n%>%<abs%>:@D.Px@%>itl                     # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
+LEXICON N-MIQUIZTLI
+! TODO: Derivados de verbo
+@D.Px@%<n%>%<abs%>:@D.Px@%>tli                     # ;
 %<n%>:                                             # ;
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
@@ -468,6 +493,10 @@ LEXICON Rel
 !+tlan%<n%>%<loc%>:%>tlan # ; ! FIXME: Orth
 !+yan%<n%>%<loc%>:%>yan # ; ! FIXME: Orth
 
+LEXICON ADV-NEG
+
+%<adv%>%<neg%>: # ; 
+
 LEXICON ADV-ITG
 
 %<adv%>%<itg%>: # ; 
@@ -510,6 +539,17 @@ tehuan%<prn%>%<pers%>%<p1%>%<pl%>:tehuan # ;
 nimehuan%<prn%>%<pers%>%<p2%>%<pl%>:nimehuan # ;
 yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
+LEXICON Copula
+
+ca%<cop%>%<s_sg1%>:nica # ; 
+ca%<cop%>%<s_sg2%>:tica # ; 
+ca%<cop%>%<s_sg3%>:ca # ; 
+ca%<cop%>%<s_pl1%>:ticate # ; 
+ca%<cop%>%<s_pl2%>:ancate # ; 
+ca%<cop%>%<s_pl3%>:cate # ; 
+ca%<cop%>%<s_pl1%>:ticateh # ; 
+ca%<cop%>%<s_pl2%>:ancateh # ; 
+ca%<cop%>%<s_pl3%>:cateh # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -528,11 +568,12 @@ manozo%<cnjsub%>:manozo # ; ! "aunque"
 ic%<ord%>:ic # ; ! "" ! TODO: Other things too
 inīc%<ord%>:inīc # ; ! ""  ! TODO: Is this in<det>+ic<ord> ?
 
-ca%<mod%>:ca # ; ! "es un hecho que"
+Copula ; 
 
 LEXICON Determinantes 
 
-in:in                                           DET ; ! "a" 
+in:in                                           DET ; ! "uno, el" 
+on:on                                           DET ; ! "" 
 
 LEXICON Pronombres 
 
@@ -588,6 +629,7 @@ ehēcatl:ehēca                                   N-ATL ; ! "aire, viento"
 xōlētl:xōlē                                     N-ATL ; ! "hongo"
 nanacatl:nanaca                                 N-ATL ; ! "hongo"
 cemanāhuatl:cemanāhua                           N-ATL ; ! "universo, mundo"
+etl:e                                           N-ATL ; ! "frijol"
 
 iztatl:izta                                     N-ATL ; ! "sal"
 āmatl:āma                                       N-ATL ; ! "papel"
@@ -602,8 +644,11 @@ mitotli:mito                                    N-PAHTLI ; ! "danza, baile"
 tēuctli:tēuc                                    N-PAHTLI ; ! "señor"
 oquichtli:oquich                                N-PAHTLI ; ! "hombre"
 tōchtli:tōch                                    N-PAHTLI ; ! "conejo"
+itzcuīntli:itzcuīn                              N-PAHTLI ; ! "perro"
 teōpantli:teōpan                                N-TEŌPANTLI ; ! "iglesia"
 tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
+
+miquiztli:miquiz                                N-MIQUIZTLI ; ! "muerte"
 
 calli:cal                                       N-CALLI ; ! "casa"
 mīlli:mīl                                       N-CALLI ; ! "campo"
@@ -619,12 +664,14 @@ ayotochin:ayotoch                               N-AYOTOCHIN ; ! "armadillo"
 patox:patox                                     N-PATOX ; ! "pato"
 !ixtololo:ixtololo                               N-PATOX ; ! "ojo"
 !tlapitlanil:tlapitlanil                         N-PATOX ; ! "rayo"
+chichi:chichi                                   N-PATOX ; ! "perro"
 
 xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
 cuahuitl:cua%{u%}%{h%}                          N-CAXITL ; ! "árbol"
 caxitl:cax                                      N-CAXITL ; ! "copa"
 tequitl:tequ                                    N-CAXITL ; ! "trabajo, obra, cargo"
 xōchitl:xōch                                    N-CAXITL ; ! "flor"
+cōmitl:cōmi                                     N-ATL ; ! "olla"
 
 michin:mich                                     N-CHAPOLIN ; ! "pescado"
 
@@ -650,6 +697,7 @@ otomitl:otomi                                   N-TLĀCATL ;
 
 tzontecomatl:tzontecoma                         N-TLĀCATL ;
 pitzōnacatl:pitzōnaca                           N-TLĀCATL ; ! "carne de puerco"
+pochtēcatl:pochtēca                             N-TLĀCATL ; ! "pochteca, vendedor"
 
 ! xihuitl
 
@@ -664,13 +712,119 @@ teōpixqui:teōpixqui                             N-TEŌPIXQUI ; ! "sacerdote"
 cemānāhuac:cemānāhuac                           N-TZONTECON ; ! "universo, mundo"
 ānāhuac:ānāhuac                                 N-TZONTECON ; ! "algo al lado del agua"
 
+ēlōtl:ēlō     N-ATL ; ! "young ear of corn"
+
+calātl:calā    N-ATL ; ! "frog"
+calcatl:calca    N-ATL ; ! "inhabitant"
+callotl:callo    N-ATL ; ! "the house"
+camatl:cama    N-ATL ; ! "the mouth"
+catzotl:catzo    N-ATL ; ! "jicama, an edible root"
+cecitl:ceci    N-ATL ; ! "something frozen"
+cemmatl:cemma    N-ATL ; ! "one hand, a measure"
+cemmītl:cemmī    N-ATL ; ! "measurement from an elbow to the other hand"
+cenzotl:cenzo    N-ATL ; ! "a bolt or piece of cloth"
+ceyōtl:ceyō    N-ATL ; ! "bone marrow"
+chachatl:chacha    N-ATL ; ! "locust"
+chichitl:chichi    N-ATL ; ! "saliva"
+chīcyōtl:chīcyō    N-ATL ; ! "sorcery"
+chīlātl:chīlā    N-ATL ; ! "chili pepper water"
+chīlchōtl:chīlchō    N-ATL ; ! "a long, narrow green chile pepper"
+cimatl:cima    N-ATL ; ! "a plant with an edible root, or the root"
+ciyōtl:ciyō    N-ATL ; ! "Leporine, of the hare kind"
+cochotl:cocho    N-ATL ; ! "a beautiful bird, whose feathers are primarily green"
+cōcōtl:coco    N-ATL ; ! "scorpion"
+cocotl:coco    N-ATL ; ! "sore, pimple"
+cōlōtl:cōlō    N-ATL ; ! "scorpion"
+comatl:coma    N-ATL ; ! "vessel, container"
+cōmitl:cōmi    N-ATL ; ! "pot"
+conētlācatl:conētlāca    N-ATL ; ! ""
+conētl:cone    N-ATL ; ! "a child, boy or girl"
+copitl:copi    N-ATL ; ! "firefly or glow worm"
+cōtztetl:cōtzte    N-ATL ; ! "calf of the leg"
+coyōtl:coyō    N-ATL ; ! "coyote"
+cōzcatl:cōzca    N-ATL ; ! "necklace, jewel, ornament, jewelry"
+cuēitl:cuēi    N-ATL ; ! "_"
+mātlatl:mātla    N-ATL ; ! "a net, a hand sling"
+māxtlatl:māxtla    N-ATL ; ! "loincloth, breech clout"
+mazātl:mazā    N-ATL ; ! "deer"
+mecatl:meca    N-ATL ; ! "a cord, a rope"
+memetl:meme    N-ATL ; ! "cultivated maguey"
+metlatl:metla    N-ATL ; ! "grinding stone"
+mezotl:mezo    N-ATL ; ! "a dry maguey"
+michtetl:michte    N-ATL ; ! "a fish egg"
+mōlcatl:mōlca    N-ATL ; ! "secondary ear of maize"
+molotl:molo    N-ATL ; ! "a sparrow"
+mōyōtl:mōyō    N-ATL ; ! "mosquito"
+mōzōtl:mōzō    N-ATL ; ! "plant that produces indigo dye"
+nacatl:naca    N-ATL ; ! "meat, flesh"
+nānyōtl:nānyō    N-ATL ; ! "maternity"
+nexātl:nexā    N-ATL ; ! ""
+ōmpamitl:ōmpami    N-ATL ; ! ""
+ōtomitl:ōtomi    N-ATL ; ! ""
+pacyōtl:pacyō    N-ATL ; ! "weft of cloth, fabric, web"
+pahātl:pahā    N-ATL ; ! "rose water, an agreeable perfume"
+pāmitl:pāmi    N-ATL ; ! "banner"
+panitl:pani    N-ATL ; ! "flag, banner"
+petlatl:petla    N-ATL ; ! "reed mat"
+peyotl:peyo    N-ATL ; ! "peyote, a psychedelic plant"
+pīccatl:pīcca    N-ATL ; ! "a wrapping"
+pillōtl:pillō    N-ATL ; ! "nobility"
+pilotl:pilo    N-ATL ; ! "nephew"
+pitzotl:pitzo    N-ATL ; ! "pig"
+pōchōtl:pōchō    N-ATL ; ! "a silk cotton tree"
+pōcyōtl:pōcyō    N-ATL ; ! "smoke"
+popōtl:popō    N-ATL ; ! "a plant used to make brooms"
+poyōtl:poyō    N-ATL ; ! "something evil"
+pozatl:poza    N-ATL ; ! "_"
+tacatl:taca    N-ATL ; ! "_"
+techcatl:techca    N-ATL ; ! ""
+tecpatl:tecpa    N-ATL ; ! "flint, obsidian"
+tenitl:teni    N-ATL ; ! "barbarian"
+tēxcatl:tēxca    N-ATL ; ! "bedbug"
+tēyōtl:tēyō    N-ATL ; ! "fame, honour"
+tēzcatl:tēzca    N-ATL ; ! "a mirror"
+tlacxitl:tlacxi    N-ATL ; ! "foot"
+tlecotl:tleco    N-ATL ; ! "a dividing line"
+tlemitl:tlemi    N-ATL ; ! "a weapon, a kind of arrow involving flames"
+tleyotl:tleyo    N-ATL ; ! "honor, fame, ennoblement"
+tlīlātl:tlīlā    N-ATL ; ! "a depth"
+tocatl:toca    N-ATL ; ! "spider"
+tomatl:toma    N-ATL ; ! "a tomato, a type of fruit that goes into stews and sauces"
+tomitl:tomi    N-ATL ; ! "sheep's wool"
+tozcatl:tozca    N-ATL ; ! "voice"
+tzanatl:tzana    N-ATL ; ! "grackle"
+tzapatl:tzapa    N-ATL ; ! "a dwarf"
+xāltetl:xālte    N-ATL ; ! "_"
+xāmitl:xāmi    N-ATL ; ! "adobe"
+xeyōtl:xeyō    N-ATL ; ! "mange"
+xīlōtl:xīlō    N-ATL ; ! "small, tender ear of green maize, before it solidifies"
+xiyōtl:xiyō    N-ATL ; ! "itch, mange"
+xōchātl:xōchā    N-ATL ; ! "rose water, or rose-colored water"
+xocotl:xoco    N-ATL ; ! "hog plum"
+xōlētl:xōlē    N-ATL ; ! "mushroom"
+xōmētl:xōmē    N-ATL ; ! "an elder tree"
+yacatl:yaca    N-ATL ; ! "nose, point, something in the lead"
+yēcātl:yēcā    N-ATL ; ! "fresh water"
+yēcyōtl:yēcyō    N-ATL ; ! "goodness"
+yellotl:yello    N-ATL ; ! "diligence, encouragement and feeling like doing something"
+yōlātl:yōlā    N-ATL ; ! "a milled raw corn beverage that is given to those who feel faint"
+yōlcatl:yōlca    N-ATL ; ! "a beast, animal"
+yōllōtl:yollō    N-ATL ; ! "heart, life, spirits"
+yucatl:yuca    N-ATL ; ! "an estate, farm or plantation"
+zacatl:zaca    N-ATL ; ! "grasses, such as hay, used for fodder for animals"
+zacōtl:zacō    N-ATL ; ! "marten, ferret"
+zōyātl:zōyā    N-ATL ; ! "a palm tree"
 
 LEXICON Propios 
 
 Malintzin:Malintzin                             NP-MALINTZIN ; 
 Juan:Juan                                       NP-JUAN ; 
+Francisco:Francisco                             NP-JUAN ; 
+Lorenzo:Lorenzo                                 NP-JUAN ; 
+Pedro:Pedro                                     NP-JUAN ; 
 Acolhua:Acolhua                                 NP-ACOLHUA ; 
 Xolotl:Xolotl                                   NP-ACOLHUA ; 
+Motēuczōma:Motēuczōma                           NP-ACOLHUA ;
 Xōchimīlco:Xōchimīlco                           NP-TENOCHTITLAN ;
 Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
 Mexico:Mexico                                   NP-TENOCHTITLAN ;
@@ -688,6 +842,8 @@ tleīca:tleica                                   ADV-ITG ; ! "por qué" ! Orth/L
 tleīca:tleic                                    ADV-ITG ; ! "por qué" ! Orth/Molina
 tleīca:tlica                                    ADV-ITG ; ! "por qué" ! Orth/Axolotl
 quēnin:quēnin                                   ADV-ITG ; ! "cómo"
+
+amo:amo                                         ADV-NEG ; ! "no"
 
 āxcān:āxcān                                     ADV ; ! "ahora, hoy"
 azo:azo                                         ADV ; ! "quizás"
@@ -713,6 +869,15 @@ occepa:occepa                                   ADV ; ! "otra vez, de nuevo"
 
 cenca:cenca                                     ADV ; ! "muy"
 
+LEXICON Irregulares 
+
+%<s_sg1%>yāuh%<v%>%<iv%>%<pres%>:niyāuh         # ;
+%<s_sg2%>yāuh%<v%>%<iv%>%<pres%>:tiyāuh         # ;
+%<s_sg3%>yāuh%<v%>%<iv%>%<pres%>:yāuh           # ;
+%<s_sg1%>yāuh%<v%>%<iv%>%<pres%>:tihuī          # ;
+%<s_sg2%>yāuh%<v%>%<iv%>%<pres%>:anhuī          # ;
+%<s_sg3%>yāuh%<v%>%<iv%>%<pres%>:huī            # ;
+
 LEXICON IV 
 
 :%>                                             IVʼ ; 
@@ -732,6 +897,7 @@ quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
 chōca:chōc                                      V-IV-quiza ; ! "llorar"
 tlahtoā:tlaht                                   V-IV-tlahtoā ; ! "hablar"
+tlacuiloā:tlacuil                               V-IV-tlahtoā ; ! "escribir"
 pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"
 yāuh:yāuh                                       V-IV-huītz ; ! "ir"
 huītz:huītz                                     V-IV-huītz ; ! "venir"
@@ -748,6 +914,7 @@ chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
 cua:cu                                          V-TV-itta ; ! "comer"
 itoa:ito                                        V-TV-itta ; ! "decir"
 paca:pac                                        V-TV-itta ; ! "lavar"
+mati:mat                                        V-TV-mati ; ! "saber"
 pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
 tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner"
 

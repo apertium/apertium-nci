@@ -39,6 +39,7 @@ co:ko Loop  "weight: 0.0" ;
 cu:ku Loop  "weight: 0.0" ;
 tz:ts Loop  "weight: 0.0" ;
 ch:tʃ Loop  "weight: 0.0" ;
+cc:ks Loop  "weight: 0.0" ; ! occe /okseː/
 tl:tɬ Loop  "weight: 0.0" ;
 lt:ɬt Loop  "weight: 0.0" ;
 tt:ht Loop  "weight: 0.0" ;
