@@ -541,15 +541,17 @@ yehuan%<prn%>%<pers%>%<p3%>%<pl%>:yehuan # ;
 
 LEXICON Copula
 
-ca%<cop%>%<s_sg1%>:nica # ; 
-ca%<cop%>%<s_sg2%>:tica # ; 
-ca%<cop%>%<s_sg3%>:ca # ; 
-ca%<cop%>%<s_pl1%>:ticate # ; 
-ca%<cop%>%<s_pl2%>:ancate # ; 
-ca%<cop%>%<s_pl3%>:cate # ; 
-ca%<cop%>%<s_pl1%>:ticateh # ; 
-ca%<cop%>%<s_pl2%>:ancateh # ; 
-ca%<cop%>%<s_pl3%>:cateh # ; 
+ca%<cop%>%<pres%>%<s_sg1%>:nica # ; 
+ca%<cop%>%<pres%>%<s_sg2%>:tica # ; 
+ca%<cop%>%<pres%>%<s_sg3%>:ca # ; 
+ca%<cop%>%<pres%>%<s_sg3%>:cah # ; 
+ca%<cop%>%<pres%>%<s_pl1%>:ticate # ; 
+ca%<cop%>%<pres%>%<s_pl2%>:ancate # ; 
+ca%<cop%>%<pres%>%<s_pl3%>:cate # ; 
+ca%<cop%>%<pres%>%<s_pl1%>:ticateh # ; 
+ca%<cop%>%<pres%>%<s_pl2%>:ancateh # ; 
+ca%<cop%>%<pres%>%<s_pl3%>:cateh # ; 
+ca%<cop%>%<fut%>%<s_sg3%>:yez # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -580,6 +582,7 @@ LEXICON Pronombres
 Personales ; 
 
 tlen:tlen PRON-ITG ; ! "qué"
+tlein:tlein PRON-ITG ; ! "qué" ! Src/LKM
 
 LEXICON Numerales 
 
