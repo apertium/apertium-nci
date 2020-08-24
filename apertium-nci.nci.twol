@@ -54,6 +54,7 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 "Metathesis of -{u}{h} for {h}"
 %{u%}:h <=>  _ %{h%}: %>: i t l ;
              _ %{h%}: Vow %>: z ; 
+             _ %{h%}: Vow %>: q ; 
 
 !@ x i {u}:h {h}:u >:> i t l
 !@ x i {u}:h {h}:u >:> i t l 

@@ -204,23 +204,36 @@ LEXICON Agr-Obj-Indef
 %<o_aa3%>:%>tē                                     TV ; 
 %<o_nn3%>:%>tla                                    TV ; 
 
-LEXICON FUT
+LEXICON INTROVERSO
+
+@R.Sa.Sg@%<intro%>%<impf%>:@R.Sa.Sg@%>qui%>uh    #  ; 
+@R.Sa.Pl@%<intro%>%<impf%>:@R.Sa.Pl@%>qu%>i # ; 
+@R.Sa.Sg@%<intro%>%<perf%>:@R.Sa.Sg@%>co    #  ; 
+@R.Sa.Pl@%<intro%>%<perf%>:@R.Sa.Pl@%>coh # ; 
+@R.Sa.Sg@%<intro%>%<opt%>:@R.Sa.Sg@%>qui    #  ; 
+@R.Sa.Pl@%<intro%>%<opt%>:@R.Sa.Pl@%>qu%>i # ; 
+
+LEXICON BASE3 ! Medio
 
 @R.Sa.Sg@%<fut%>:@R.Sa.Sg@%>z    #  ; 
 @R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>queh # ; 
 @R.Sa.Pl@%<fut%>:@R.Sa.Pl@%>z%>que # ; 
+@R.Sa.Sg@%<irr%>:@R.Sa.Sg@%>z%>quia    #  ; 
+@R.Sa.Pl@%<irr%>:@R.Sa.Pl@%>z%>quiah # ; 
 
 @D.Sa@%<actio%>:@D.Sa@%>ztli    #  ; 
 @D.Sa@%<actio%>:@D.Sa@%>liztli    #  ; 
 
-LEXICON PRES
+INTROVERSO ;
+
+LEXICON BASE1
 
 @R.Sa.Sg@%<pres%>:@R.Sa.Sg@    #  ; 
 @R.Sa.Pl@%<pres%>:@R.Sa.Pl@%>h # ; 
 @R.Sa.Sg@%<impf%>:@R.Sa.Sg@%>ya    #  ; 
 @R.Sa.Pl@%<impf%>:@R.Sa.Pl@%>ya%>h # ; 
 
-LEXICON PRET
+LEXICON BASE2 ! Breve
 
 @R.Sa.Sg@%<pret%>:@R.Sa.Sg@%>%{c%}   #  ;  
 @R.Sa.Pl@%<pret%>:@R.Sa.Pl@%>queh # ; 
@@ -236,72 +249,72 @@ LEXICON PRET
 
 LEXICON V-IV-cochi
 
-%<v%>%<iv%>:i    PRES ; 
-%<v%>%<iv%>:i    FUT ; 
-%<v%>%<iv%>:     PRET ; 
+%<v%>%<iv%>:i    BASE1 ; 
+%<v%>%<iv%>:i    BASE3 ; 
+%<v%>%<iv%>:     BASE2 ; 
 
 !LEXICON V-IV-miqui
 !
-!%<v%>%<iv%>:%{i%}    PRES ; 
-!%<v%>%<iv%>:%{i%}    FUT ; 
-!%<v%>%<iv%>:     PRET ; 
+!%<v%>%<iv%>:%{i%}    BASE1 ; 
+!%<v%>%<iv%>:%{i%}    BASE3 ; 
+!%<v%>%<iv%>:     BASE2 ; 
 
 LEXICON V-IV-quiza
 
-%<v%>%<iv%>:a  PRES ; 
-%<v%>%<iv%>:a  FUT ; 
-%<v%>%<iv%>:   PRET ; 
+%<v%>%<iv%>:a  BASE1 ; 
+%<v%>%<iv%>:a  BASE3 ; 
+%<v%>%<iv%>:   BASE2 ; 
 
 LEXICON V-IV-tlahtoā
 
-%<v%>%<iv%>:oā  PRES ; 
-%<v%>%<iv%>:ō  FUT ; 
-%<v%>%<iv%>:ō   PRET ; 
+%<v%>%<iv%>:oā  BASE1 ; 
+%<v%>%<iv%>:ō  BASE3 ; 
+%<v%>%<iv%>:ō   BASE2 ; 
 
 LEXICON V-IV-pāctiā
 
-%<v%>%<iv%>:iā  PRES ; 
-%<v%>%<iv%>:ī  FUT ; 
-%<v%>%<iv%>:ī   PRET ; 
+%<v%>%<iv%>:iā  BASE1 ; 
+%<v%>%<iv%>:ī  BASE3 ; 
+%<v%>%<iv%>:ī   BASE2 ; 
 
 LEXICON V-IV-huītz
 
-%<v%>%<iv%>:  PRES ; 
-%<v%>%<iv%>:  FUT ; 
-%<v%>%<iv%>:  PRET ; 
+%<v%>%<iv%>:  BASE1 ; 
+%<v%>%<iv%>:  BASE3 ; 
+%<v%>%<iv%>:  BASE2 ; 
 
 
 
 !LEXICON V-TV 
 !
-!%<v%>%<tv%>:     PRES ; 
-!%<v%>%<tv%>:     PRET ; 
+!%<v%>%<tv%>:     BASE1 ; 
+!%<v%>%<tv%>:     BASE2 ; 
 
 LEXICON V-TV-mati
 
-%<v%>%<tv%>:i  PRES ; 
-%<v%>%<tv%>:i  FUT ; 
-%<v%>%<tv%>:     PRET ; 
+%<v%>%<tv%>:i  BASE1 ; 
+%<v%>%<tv%>:i  BASE3 ; 
+%<v%>%<tv%>:     BASE2 ; 
 
 
 LEXICON V-TV-itta
 
-%<v%>%<tv%>:a  PRES ; 
-%<v%>%<tv%>:a  FUT ; 
-%<v%>%<tv%>:     PRET ; 
+%<v%>%<tv%>:a  BASE1 ; 
+%<v%>%<tv%>:a  BASE3 ; 
+%<v%>%<tv%>:     BASE2 ; 
 
 LEXICON V-TV-tlāliā
 
-%<v%>%<tv%>:iā  PRES ; 
-%<v%>%<tv%>:ī  FUT ; 
-%<v%>%<tv%>:ī   PRET ; 
+%<v%>%<tv%>:iā  BASE1 ; 
+%<v%>%<tv%>:ī  BASE3 ; 
+%<v%>%<tv%>:ī   BASE2 ; 
 
 
 
 LEXICON V-DV
 
-%<v%>%<tv2%>:     PRES ; 
-%<v%>%<tv2%>:     PRET ; 
+%<v%>%<tv2%>:     BASE1 ; 
+%<v%>%<tv2%>:     BASE2 ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -551,7 +564,21 @@ ca%<cop%>%<pres%>%<s_pl3%>:cate # ;
 ca%<cop%>%<pres%>%<s_pl1%>:ticateh # ; 
 ca%<cop%>%<pres%>%<s_pl2%>:ancateh # ; 
 ca%<cop%>%<pres%>%<s_pl3%>:cateh # ; 
+ca%<cop%>%<fut%>%<s_sg1%>:niyez # ; 
+ca%<cop%>%<fut%>%<s_sg2%>:tiyez # ; 
 ca%<cop%>%<fut%>%<s_sg3%>:yez # ; 
+ca%<cop%>%<fut%>%<s_pl1%>:tiyezque # ; 
+ca%<cop%>%<fut%>%<s_pl1%>:tiyezqueh # ; 
+ca%<cop%>%<fut%>%<s_pl2%>:anyezque # ; 
+ca%<cop%>%<fut%>%<s_pl2%>:anyezqueh # ; 
+ca%<cop%>%<fut%>%<s_pl3%>:yezque # ; 
+ca%<cop%>%<fut%>%<s_pl3%>:yezqueh # ; 
+ca%<cop%>%<irr%>%<s_sg1%>:niyezquia # ; 
+ca%<cop%>%<irr%>%<s_sg2%>:tiyezquia # ; 
+ca%<cop%>%<irr%>%<s_sg3%>:yezquia # ; 
+ca%<cop%>%<irr%>%<s_pl1%>:niyezquiah # ; 
+ca%<cop%>%<irr%>%<s_pl2%>:tiyezquiah # ; 
+ca%<cop%>%<irr%>%<s_pl3%>:yezquiah # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -619,6 +646,7 @@ huīc:huīc Rel ; ! "contra"
 pal:pal Rel ; ! "gracias a"
 pampa:pampa Rel ; ! "por"
 teuh:teuh Rel ; ! "a manera de, como"
+xpan:xpan Rel ; ! "en frente de"
 
 LEXICON Nouns
 
