@@ -594,6 +594,7 @@ ca%<cop%>%<irr%>%<s_pl3%>:yezquiah # ;
 LEXICON Miscellaneous
 
 mā%<mod%>:mā # ; 
+mā%<mod%>:māh # ; 
 tlā%<mod%>:tlā # ; 
 
 auh%<cnjcoo%>:auh # ;  ! "y, pero"
@@ -707,6 +708,9 @@ tōchtli:tō%>tōch%>tin                           N-PLUR-REDUP ; ! "conejos"
 itzcuīntli:itzcuīn                              N-PAHTLI ; ! "perro"
 teōpantli:teōpan                                N-TEŌPANTLI ; ! "iglesia"
 tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
+otli:o                                          N-PAHTLI ; ! "camino, canal"
+ochpantli:ochpan                                N-PAHTLI ; ! "camino, canal"
+ochpantli:uchpan                                N-PAHTLI ; ! "camino, canal" ! Src/Axolotl
 
 miquiztli:miquiz                                N-MIQUIZTLI ; ! "muerte"
 
@@ -1219,12 +1223,17 @@ amōlli:amōl N-CUALLI ; ! "soap "
 acualli:acual N-CUALLI ; ! "a bad thing"
 
 
-huēy:huēy N-HUĒY ; ! "great"
+huēy:huēy N-HUĒY ; ! "big, great" ! ce huey xonacatl	1 cebolla grande
+huēyi:huēyi N-HUĒY ; ! "big great" ! hueyi in tlacualchihualoyan	la cocina es grande
 hueyotl:hueyo N-TLĀCATL ; ! "great one"
+
+melahuac:melahuac N-TZONTECON ; ! "algo recto"
 
 kilo:kilo N-TZONTECON ; ! "kilo"
 
+! Pronombres?
 ocachi:ocachi N-TZONTECON ; ! "more" ! FIXME: Comprobar
+nochi:nochi N-TZONTECON ; ! "todo" ! FIXME: Comprobar
 
 LEXICON Propios 
 
@@ -1259,6 +1268,7 @@ cāmpa:cāmpa                                     ADV-ITG ; ! "dónde"
 cāmpa:cāmpa                                     ADV ;     ! "dondesea"
 
 amo:amo                                         ADV-NEG ; ! "no"
+amo:ahmo                                        ADV-NEG ; ! "no" ! Srd/Axolotl
 
 āxcān:āxcān                                     ADV ; ! "ahora, hoy"
 azo:azo                                         ADV ; ! "quizás"
@@ -1273,7 +1283,6 @@ nicān:nicān                                     ADV ; ! "aquí"
 oncān:oncān                                     ADV ; ! "ahí"
 ōmpa:ōmpa                                       ADV ; ! "allá"
 
-
 zātēpan:zātēpan                                 ADV ; ! "después"
 zan:zan                                         ADV ; ! "sólo"
 
@@ -1283,6 +1292,9 @@ nochipa:nochipa                                 ADV ; ! "para siempre"
 occepa:occepa                                   ADV ; ! "otra vez, de nuevo"
 
 cenca:cenca                                     ADV ; ! "muy"
+
+huel:huel                                       ADV ; ! "bien, muy, mucho"
+
 
 LEXICON Irregulares 
 
