@@ -10,6 +10,7 @@ Multichar_Symbols
 %<num%>                                  ! Numeral
 %<np%>                                   ! Nombre propio
 %<adv%>                                  !
+%<qst%>                                  !
 
 %<tv%>                                   ! Transitivo
 %<iv%>                                   ! Intransitivo
@@ -537,6 +538,7 @@ LEXICON Personales
 nehuatl%<prn%>%<pro%>%<p1%>%<sg%>:neh # ;
 tehuatl%<prn%>%<pro%>%<p2%>%<sg%>:teh # ;
 yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:yeh # ;
+yehuatl%<prn%>%<pro%>%<p3%>%<sg%>:ye # ;
 
 !
 ! Formas largas de los pronombres personales singulares.
@@ -597,6 +599,8 @@ manozo%<cnjsub%>:manozo # ; ! "aunque"
 ic%<ord%>:ic # ; ! "" ! TODO: Other things too
 inīc%<ord%>:inīc # ; ! ""  ! TODO: Is this in<det>+ic<ord> ?
 
+cuix%<qst%>:cuix # ; 
+
 Copula ; 
 
 LEXICON Determinantes 
@@ -604,12 +608,16 @@ LEXICON Determinantes
 in:in                                           DET ; ! "uno, el" 
 on:on                                           DET ; ! "" 
 
+miac%<det%>%<qnt%>:miac # ;
+
 LEXICON Pronombres 
 
 Personales ; 
 
 tlen:tlen PRON-ITG ; ! "qué"
 tlein:tlein PRON-ITG ; ! "qué" ! Src/LKM
+
+inōn%<prn%>%<dem%>:inōn # ; 
 
 LEXICON Numerales 
 
@@ -629,9 +637,14 @@ chicuēyi:chicuēyi NUM ; ! ""
 chiucnāhui:chiucnāhui NUM ; ! "nueve"
 mahtlāctli:mahtlāctli NUM ; ! "diez"
 
+napohualli:napohualli NUM ; ! "ochenta"
+
 caxtolli:caxtolli NUM ; ! ""
 
 cempōhualli:cempōhualli NUM ; ! ""
+
+! 10. -(i)xtin. Puede agregarse -ixtin (-xtin tras vocal) a los números
+! superiores a 1 precedidos de un prefijo posesivo para significar "los (tantos)... ".
 
 LEXICON Relacionales 
 
@@ -681,6 +694,7 @@ mitotli:mito                                    N-PAHTLI ; ! "danza, baile"
 tēuctli:tēuc                                    N-PAHTLI ; ! "señor"
 oquichtli:oquich                                N-PAHTLI ; ! "hombre"
 tōchtli:tōch                                    N-PAHTLI ; ! "conejo"
+tōchtli:tō%>tōch%>tin                           N-PLUR-REDUP ; ! "conejos"
 itzcuīntli:itzcuīn                              N-PAHTLI ; ! "perro"
 teōpantli:teōpan                                N-TEŌPANTLI ; ! "iglesia"
 tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
@@ -705,15 +719,18 @@ chichi:chichi                                   N-PATOX ; ! "perro"
 
 xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
 cuahuitl:cua%{u%}%{h%}                          N-CAXITL ; ! "árbol"
+cemilhuitl:cemil%{u%}%{h%}                      N-CAXITL ; ! "un día"
 caxitl:cax                                      N-CAXITL ; ! "copa"
 tequitl:tequ                                    N-CAXITL ; ! "trabajo, obra, cargo"
 xōchitl:xōch                                    N-CAXITL ; ! "flor"
 cōmitl:cōmi                                     N-ATL ; ! "olla"
 
 michin:mich                                     N-CHAPOLIN ; ! "pescado"
+citlālin:citlāl                                 N-CHAPOLIN ; ! "estrella"
+citlālin:ci%>citlāl%>tin                        N-PLUR-REDUP ; ! "estrellas"
 
 chapolin:chapol                                 N-CHAPOLIN ; ! "chapulín"
-chapolin:chāchapoltin                           N-PLUR-REDUP ; ! "chapulín"
+chapolin:chā%>chapol%>tin                       N-PLUR-REDUP ; ! "chapulín"
 
 cualli:cual                                     N-CUALLI ; ! "cosa buena, bien"
 tōnalli:tōnal                                   N-CUALLI ; ! "día"
@@ -722,6 +739,7 @@ tlahtōlli:tlahtōl                               N-CUALLI ; ! "palabra, lengua"
 pilli:pil                                       N-CUALLI ; ! "niño"
 cihuapilli:cihuapil                             N-CUALLI ; ! "niña"
 mācēhualli:mācēhual                             N-CUALLI ; ! "campesino"
+citlālli:citlāl                                 N-CUALLI ; ! "estrella"
 
 ! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
 !tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
@@ -740,6 +758,9 @@ pochtēcatl:pochtēca                             N-TLĀCATL ; ! "pochteca, vend
 
 tzontecon:tzontecon                             N-TZONTECON ; ! "cabeza"
 
+tlahtoāni:tlahtoāni                             N-TZONTECON ; ! "rey, líder"
+teōpixcatlahtoāni:teōpixcatlahtoāni             N-TZONTECON ; ! ""
+
 tōnatiuh:tōnatiuh                               N-TZONTECON ; ! "sol"
 
 chichi:chichi                                   N-TZONTECON ; ! "perro"
@@ -751,11 +772,11 @@ cemānāhuac:cemānāhuac                           N-TZONTECON ; ! "universo, m
 
 ēlōtl:ēlō     N-ATL ; ! "young ear of corn"
 
-calātl:calā    N-ATL ; ! "frog"
+calātl:calā    N-ATL ; ! "rana"
 calcatl:calca    N-ATL ; ! "inhabitant"
-callotl:callo    N-ATL ; ! "the house"
-camatl:cama    N-ATL ; ! "the mouth"
-catzotl:catzo    N-ATL ; ! "jicama, an edible root"
+callotl:callo    N-ATL ; ! "la casa"
+camatl:cama    N-ATL ; ! "la boca"
+catzotl:catzo    N-ATL ; ! "jicama"
 cecitl:ceci    N-ATL ; ! "something frozen"
 cemmatl:cemma    N-ATL ; ! "one hand, a measure"
 cemmītl:cemmī    N-ATL ; ! "measurement from an elbow to the other hand"
@@ -763,17 +784,17 @@ cenzotl:cenzo    N-ATL ; ! "a bolt or piece of cloth"
 ceyōtl:ceyō    N-ATL ; ! "bone marrow"
 chachatl:chacha    N-ATL ; ! "locust"
 chichitl:chichi    N-ATL ; ! "saliva"
-chīcyōtl:chīcyō    N-ATL ; ! "sorcery"
+chīcyōtl:chīcyō    N-ATL ; ! "brujería"
 chīlātl:chīlā    N-ATL ; ! "chili pepper water"
 chīlchōtl:chīlchō    N-ATL ; ! "a long, narrow green chile pepper"
-cimatl:cima    N-ATL ; ! "a plant with an edible root, or the root"
-ciyōtl:ciyō    N-ATL ; ! "Leporine, of the hare kind"
+cimatl:cima    N-ATL ; ! "raíz comestible"
+ciyōtl:ciyō    N-ATL ; ! ""
 cochotl:cocho    N-ATL ; ! "a beautiful bird, whose feathers are primarily green"
 cōcōtl:coco    N-ATL ; ! "scorpion"
 cocotl:coco    N-ATL ; ! "sore, pimple"
 cōlōtl:cōlō    N-ATL ; ! "scorpion"
 comatl:coma    N-ATL ; ! "vessel, container"
-cōmitl:cōmi    N-ATL ; ! "pot"
+cōmitl:cōmi    N-ATL ; ! "olla"
 conētlācatl:conētlāca    N-ATL ; ! ""
 conētl:cone    N-ATL ; ! "a child, boy or girl"
 copitl:copi    N-ATL ; ! "firefly or glow worm"
@@ -1026,6 +1047,169 @@ zahuatl:zahua N-ATL ; ! "smallpox"
 zoquitecomatl:zoquitecoma N-ATL ; ! "a pottery cup "
 
 
+nelli:nel N-CUALLI ; ! "a true thing"
+chīlli:chīl N-CUALLI ; ! "chile"
+tlacualli:tlacual N-CUALLI ; ! "food"
+tlālli:tlāl N-CUALLI ; ! "or"
+tlahuicxitīlli:tlahuicxitīl N-CUALLI ; ! "something cooked "
+quetzalli:quetzal N-CUALLI ; ! "the quetzal bird "
+tlaxcalli:tlaxcal N-CALLI ; ! "tortilla or baked bread "
+tlaxcalli:tlaxcal N-CALLI ; ! "_"
+temāzcalli:temāzcal N-CALLI ; ! "a sweat house or sweatbath"
+huīpīlli:huīpīl N-CUALLI ; ! "an indigenous woman’s blouse or shift "
+yohualli:yohual N-CUALLI ; ! "nighttime"
+ātōlli:ātōl N-CUALLI ; ! "a beverage made from finely ground maize"
+tamalli:tamal N-CUALLI ; ! "a tamale"
+tlaōlli:tlaōl N-CUALLI ; ! "maize or corn kernels"
+pinolli:pinol N-CUALLI ; ! "flour"
+icpalli:icpal N-CUALLI ; ! "a seat of authority"
+xōchicualli:xōchicual N-CUALLI ; ! "fruit"
+ācalli:ācal N-CALLI ; ! "ship"
+tlaīlli:tlaīl N-CUALLI ; ! "bloody dysentery or diarrhea "
+tlacuilōlli:tlacuilōl N-CUALLI ; ! "document"
+tlatōlli:tlatōl N-CUALLI ; ! "word"
+copalli:copal N-CUALLI ; ! "incense"
+chīmalli:chīmal N-CUALLI ; ! "a shield"
+xocoyolli:xocoyol N-CUALLI ; ! "sorrel"
+xiuhtlalpilli:xiuhtlalpil N-CUALLI ; ! "a knotted turquoise cloth"
+tlecuīlli:tlecuīl N-CUALLI ; ! "the fireplace "
+tlapalli¹:tlapal N-CUALLI ; ! "paint"
+tlapalli²:tlapal N-CUALLI ; ! "force"
+tlanōnōtzalli:tlanōnōtzal N-CUALLI ; ! "something or someone who has been reprimanded"
+tlālmīlli:tlālmīl N-CUALLI ; ! "a cultivated field"
+mazayelli:mazayel N-CUALLI ; ! "an herb used in curing purulent ears"
+xōchimīlli:xōchimīl N-CUALLI ; ! "a cultivated field of flowers "
+xiquipilli:xiquipil N-CUALLI ; ! "a special sack or bag for cacao beans or incense"
+tlīlli:tlīl N-CUALLI ; ! "black ink"
+tlatzacualli:tlatzacual N-CUALLI ; ! "a mosaic"
+tlachīhualli:tlachīhual N-CUALLI ; ! "something made"
+texcalli:texcal N-CALLI ; ! "stone"
+quecholli:quechol N-CUALLI ; ! "a bird with rich feathers "
+nopalli:nopal N-CUALLI ; ! "nopal"
+macuilpohualli:macuilpohual N-CUALLI ; ! "one hundred "
+coyolli:coyol N-CUALLI ; ! "a small bell"
+xiuhmolpilli:xiuhmolpil N-CUALLI ; ! "a binding of the years"
+xiuhchimalli:xiuhchimal N-CUALLI ; ! "a shield with a turquoise mosaic design "
+xiuhchimalli:xiuhchimal N-CUALLI ; ! "a war shield decorated with turquoise stones"
+tlemōlli:tlemōl N-CUALLI ; ! "stew"
+tlazolli:tlazol N-CUALLI ; ! "trash "
+tlamamalli:tlamamal N-CUALLI ; ! "a burden"
+tlamahuizōlli:tlamahuizōl N-CUALLI ; ! "a miracle"
+tlāhuīlli:tlāhuīl N-CUALLI ; ! "clarity"
+tlacōhualli:tlacōhual N-CUALLI ; ! "something bought"
+tēnōnōtzalli:tēnōnōtzal N-CUALLI ; ! "_"
+tecolli:tecol N-CUALLI ; ! "charcoal "
+quimilli:quimil N-CUALLI ; ! "a counter "
+petlācalli:petlācal N-CALLI ; ! "a container made of straw"
+ōlli:ōl N-CUALLI ; ! "rubber"
+olli:ol N-CUALLI ; ! "_"
+nenonotzalli:nenonotzal N-CUALLI ; ! "a legend"
+nāuhpōhualli:nāuhpōhual N-CUALLI ; ! "eighty "
+itztlaehualli:itztlaehual N-CUALLI ; ! "leather handles "
+apozonalli:apozonal N-CUALLI ; ! "amber"
+tlayohualli:tlayohual N-CUALLI ; ! "the darkness of night"
+tlatzoyōnīlli:tlatzoyōnīl N-CUALLI ; ! "_"
+tlatlehuatzalli:tlatlehuatzal N-CUALLI ; ! "_"
+tlatelli:tlatel N-CUALLI ; ! "a hillock"
+tlāhuizcalli:tlāhuizcal N-CALLI ; ! "the light of dawn"
+tlahuelittalli:tlahuelittal N-CUALLI ; ! "_"
+petzotzocolli:petzotzocol N-CUALLI ; ! ""shining hair strands""
+patolli:patol N-CUALLI ; ! "a pre-Columbian game"
+oquichpilli:oquichpil N-CUALLI ; ! "boy"
+oquichpilli:oquichpil N-CUALLI ; ! "_"
+ōmpōhualli:ōmpōhual N-CUALLI ; ! "forty "
+ocopilli:ocopil N-CUALLI ; ! "a pine torch "
+mālli:māl N-CUALLI ; ! "war captive"
+huehuetlahtolli:huehuetlahtol N-CUALLI ; ! "ancient ones' accounts"
+cuauhcalli:cuauhcal N-CALLI ; ! "jail"
+cuahcualli:cuahcual N-CUALLI ; ! "_"
+comalli:comal N-CUALLI ; ! "griddle"
+caxtolpohualli:caxtolpohual N-CUALLI ; ! "300 "
+cacalli:cacal N-CALLI ; ! "a crow or a raven "
+cacalli:cacal N-CALLI ; ! "_"
+ātotonilli:ātotonil N-CUALLI ; ! "hot water"
+zāzanilli:zāzanil N-CUALLI ; ! "a little tale or story to make people laugh"
+yecualli:yecual N-CUALLI ; ! "well-being"
+xōmolli:xōmol N-CUALLI ; ! "a corner"
+xomalli:xomal N-CUALLI ; ! "grass"
+xiuhtonalli:xiuhtonal N-CUALLI ; ! "year count"
+xiuhpohualli:xiuhpohual N-CUALLI ; ! "yearly account "
+xiuhcalli:xiuhcal N-CALLI ; ! "a bower"
+xiuhcalli:xiuhcal N-CALLI ; ! "_"
+xīcalli:xīcal N-CALLI ; ! "gourd vessel "
+tzoncalli:tzoncal N-CALLI ; ! "hair"
+tzoncalli:tzoncal N-CALLI ; ! "_"
+tzitzilli:tzitzil N-CUALLI ; ! "rattle"
+tzacualli:tzacual N-CUALLI ; ! "_"
+tzacualli:tzacual N-CUALLI ; ! "a small hill"
+totolquimilli:totolquimil N-CUALLI ; ! "turkey pasties "
+tōpīlli:tōpīl N-CUALLI ; ! "a rod"
+tleamanalli:tleamanal N-CUALLI ; ! "_"
+tlazopilli:tlazopil N-CUALLI ; ! ""precious nobleman"
+tlazollalli:tlazollal N-CUALLI ; ! "humus "
+tlayeyecōlli:tlayeyecōl N-CUALLI ; ! "something proved or something consulted in a trial "
+tlayelli:tlayel N-CUALLI ; ! "something foul"
+tlayecōlli:tlayecōl N-CUALLI ; ! "work"
+tlaxilacalli:tlaxilacal N-CALLI ; ! "ward"
+tlaxexelolli:tlaxexelol N-CUALLI ; ! "_"
+tlatlacōlli:tlatlacōl N-CUALLI ; ! "sin"
+tlatepachōlli:tlatepachōl N-CUALLI ; ! "a stoning"
+tlatēnēhualli:tlatēnēhual N-CUALLI ; ! "_"
+tlaquēntīlli:tlaquēntīl N-CUALLI ; ! "_"
+tlapolōlli:tlapolōl N-CUALLI ; ! "something lost"
+tlapōhualli:tlapōhual N-CUALLI ; ! "a count"
+tlapītzalli:tlapītzal N-CUALLI ; ! "wind instrument"
+tlaolchipinilli:tlaolchipinil N-CUALLI ; ! "large drops of liquid rubber "
+tlanōtzalli:tlanōtzal N-CUALLI ; ! "someone called"
+tlanemachtilli:tlanemachtil N-CUALLI ; ! "_"
+tlanahuatilli:tlanahuatil N-CUALLI ; ! "_"
+tlanahuatīlli:tlanahuatīl N-CUALLI ; ! "a messenger"
+tlamictīlli:tlamictīl N-CUALLI ; ! "_"
+tlamatilōlli:tlamatilōl N-CUALLI ; ! "_"
+tlāltetelli:tlāltetel N-CUALLI ; ! "_"
+tlalpīlli:tlalpīl N-CUALLI ; ! "triangular hip cloth"
+tlalcahualli:tlalcahual N-CUALLI ; ! "something forgotten"
+tlaīxtlapānalli:tlaīxtlapānal N-CUALLI ; ! "something divided "
+tlahuīcalli:tlahuīcal N-CALLI ; ! "_"
+tlahchinolli:tlahchinol N-CUALLI ; ! "_"
+tlacuitlalpīlli:tlacuitlalpīl N-CUALLI ; ! "_"
+tlacualittalli:tlacualittal N-CUALLI ; ! "_"
+tlachpanalli:tlachpanal N-CUALLI ; ! "sweeping "
+tlacanahualli:tlacanahual N-CUALLI ; ! "a devastated thing "
+tlaāyōtīlli:tlaāyōtīl N-CUALLI ; ! "_"
+tlaātilīlli:tlaātilīl N-CUALLI ; ! "something melted or softened "
+tētlatquītīlli:tētlatquītīl N-CUALLI ; ! "_"
+tequipachōlli:tequipachōl N-CUALLI ; ! "affliction"
+teōtlālli:teōtlāl N-CUALLI ; ! "land associated with divinity or divinities"
+teōpixcācalli:teōpixcācal N-CALLI ; ! "literally"
+tencololli:tencolol N-CUALLI ; ! "a lip plug"
+tēlpōchcalli:tēlpōchcal N-CALLI ; ! "house of youths"
+tēicnēlīlli:tēicnēlīl N-CUALLI ; ! "a good deed done to another person"
+teconalli:teconal N-CUALLI ; ! "coal"
+tapazolli:tapazol N-CUALLI ; ! "bird's nest "
+nexīcōlli:nexīcōl N-CUALLI ; ! "vanity"
+nemachtilcalli:nemachtilcal N-CALLI ; ! "a school where things are taught and learned "
+mōlli:mōl N-CUALLI ; ! "sauce"
+michmolli:michmol N-CUALLI ; ! "a fish stew "
+metlalli:metlal N-CUALLI ; ! "a parcel of land with agaves "
+mazatlacualli:mazatlacual N-CUALLI ; ! "weeds or hay for feeding animals "
+mamacuilpohualli:mamacuilpohual N-CUALLI ; ! "of one hundred in a hundred"
+ithualli:ithual N-CUALLI ; ! "patio"
+icnotlacualli:icnotlacual N-CUALLI ; ! "the food of humble people "
+ichquequetzalli:ichquequetzal N-CUALLI ; ! "fine maguey fiber plumage "
+huapalcalli:huapalcal N-CALLI ; ! "a store or a house of planks "
+emolli:emol N-CUALLI ; ! "a bean or lima bean stew "
+ēlōatōlli:ēlōatōl N-CUALLI ; ! "maize atole "
+cocōlli:cocōl N-CUALLI ; ! "anger"
+cenquizcacualli:cenquizcacual N-CUALLI ; ! "entirely good "
+cemilhuitlapoalli:cemilhuitlapoal N-CUALLI ; ! "a day sign "
+caltzacualli:caltzacual N-CUALLI ; ! "hunting"
+atlanōnotzalli:atlanōnotzal N-CUALLI ; ! "undisciplined"
+amōlli:amōl N-CUALLI ; ! "soap "
+āmanalli:āmanal N-CUALLI ; ! "a pool or tank of water "
+acualli:acual N-CUALLI ; ! "a bad thing"
+
+
 LEXICON Propios 
 
 Malintzin:Malintzin                             NP-MALINTZIN ; 
@@ -1038,6 +1222,7 @@ Xolotl:Xolotl                                   NP-ACOLHUA ;
 Motēuczōma:Motēuczōma                           NP-ACOLHUA ;
 Xōchimīlco:Xōchimīlco                           NP-TENOCHTITLAN ;
 Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
+Yucatan:Yucatan                                 NP-TENOCHTITLAN ;
 Mexico:Mexico                                   NP-TENOCHTITLAN ;
 Cuauhnāhuac:Cuauhnāhuac                         NP-TENOCHTITLAN ;
 Tlaxcallān:Tlaxcallān                           NP-TENOCHTITLAN ; 
@@ -1053,6 +1238,9 @@ tleīca:tleica                                   ADV-ITG ; ! "por qué" ! Orth/L
 tleīca:tleic                                    ADV-ITG ; ! "por qué" ! Orth/Molina
 tleīca:tlica                                    ADV-ITG ; ! "por qué" ! Orth/Axolotl
 quēnin:quēnin                                   ADV-ITG ; ! "cómo"
+
+cāmpa:cāmpa                                     ADV-ITG ; ! "dónde"
+cāmpa:cāmpa                                     ADV ; ! "dondesea"
 
 amo:amo                                         ADV-NEG ; ! "no"
 
@@ -1107,6 +1295,7 @@ mochīhua:mochīhu                                V-IV-quiza ; ! "pasar"
 quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
 chōca:chōc                                      V-IV-quiza ; ! "llorar"
+tlatlahuana:tlatlahuan                          V-IV-quiza ; ! "beber alcohol"
 tlahtoā:tlaht                                   V-IV-tlahtoā ; ! "hablar"
 tlacuiloā:tlacuil                               V-IV-tlahtoā ; ! "escribir"
 pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"

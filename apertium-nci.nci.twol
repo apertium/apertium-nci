@@ -3,7 +3,7 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U W Y Z
  a b c d e f g h i j k l m n o p q r s t u w y z
  ā ē ī ō ū Ā Ē Ī Ō Ū 
- %{o%}:o  
+ %{o%}:o %{o%}:0
  %{i%}:i %{i%}:0
  %{h%}:h %{h%}:u
  %{u%}:u %{u%}:h
@@ -40,6 +40,9 @@ n:0 <=> _ %>: h u a n ;
 
 "Vowel deletion"
 i:0 <=> %{o%}: %>: _ Cns ; 
+
+"Alternation in locative -c{o}"
+%{o%}:0 <=> %>: c _ .#. ; 
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;
