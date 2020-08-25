@@ -480,6 +480,13 @@ LEXICON N-TEŌPIXQUI
 %<n%>:                                             Plural ;
 %<n%>:                                             Deriv ;
 
+LEXICON N-HUĒY
+
+@D.Px@%<n%>%<abs%>:@D.Px@                          # ;
+%<n%>:                                             # ;
+%<n%>:                                             Plural ;
+%<n%>:                                             Deriv ;
+
 
 LEXICON NP-MALINTZIN
 
@@ -595,6 +602,7 @@ auh%<cnjcoo%>:auh # ;  ! "y, pero"
 nozo%<cnjcoo%>:nozo # ;  ! "o"
 anozo%<cnjcoo%>:anozo # ; ! "o"
 manozo%<cnjsub%>:manozo # ; ! "aunque"
+intlā%<cnjsub%>:intlā # ; ! "si"
 
 ic%<ord%>:ic # ; ! "" ! TODO: Other things too
 inīc%<ord%>:inīc # ; ! ""  ! TODO: Is this in<det>+ic<ord> ?
@@ -609,6 +617,7 @@ in:in                                           DET ; ! "uno, el"
 on:on                                           DET ; ! "" 
 
 miac%<det%>%<qnt%>:miac # ;
+īxquich%<det%>%<qnt%>:īxquich # ; ! "todo"
 
 LEXICON Pronombres 
 
@@ -1210,6 +1219,13 @@ amōlli:amōl N-CUALLI ; ! "soap "
 acualli:acual N-CUALLI ; ! "a bad thing"
 
 
+huēy:huēy N-HUĒY ; ! "great"
+hueyotl:hueyo N-TLĀCATL ; ! "great one"
+
+kilo:kilo N-TZONTECON ; ! "kilo"
+
+ocachi:ocachi N-TZONTECON ; ! "more" ! FIXME: Comprobar
+
 LEXICON Propios 
 
 Malintzin:Malintzin                             NP-MALINTZIN ; 
@@ -1240,7 +1256,7 @@ tleīca:tlica                                    ADV-ITG ; ! "por qué" ! Orth/A
 quēnin:quēnin                                   ADV-ITG ; ! "cómo"
 
 cāmpa:cāmpa                                     ADV-ITG ; ! "dónde"
-cāmpa:cāmpa                                     ADV ; ! "dondesea"
+cāmpa:cāmpa                                     ADV ;     ! "dondesea"
 
 amo:amo                                         ADV-NEG ; ! "no"
 
@@ -1290,6 +1306,7 @@ yōli:yōl                                        V-IV-cochi ; ! "vivir"
 tzatzi:tzatz                                    V-IV-cochi ; ! "gritar"
 ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"
 cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
+huēya:huēy                                      V-IV-quiza ; ! "crecer"
 mēhua:mēhu                                      V-IV-quiza ; ! "levantarse"
 mochīhua:mochīhu                                V-IV-quiza ; ! "pasar"
 quiza:quiz                                      V-IV-quiza ; ! ""
