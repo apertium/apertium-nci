@@ -492,7 +492,7 @@ LEXICON NP-MALINTZIN
 
 %<np%>%<ant%>%<f%>%<dim%>: # ; 
 
-LEXICON NP-ACOLHUA
+LEXICON NP-NEZAHUALCOYOTL
 
 %<np%>%<ant%>%<m%>: # ; 
 
@@ -1099,6 +1099,7 @@ tlachīhualli:tlachīhual N-CUALLI ; ! "something made"
 texcalli:texcal N-CALLI ; ! "stone"
 quecholli:quechol N-CUALLI ; ! "a bird with rich feathers "
 nopalli:nopal N-CUALLI ; ! "nopal"
+nopalli:nohpal N-CUALLI ; ! "nopal" ! Src/Axolotl
 macuilpohualli:macuilpohual N-CUALLI ; ! "one hundred "
 coyolli:coyol N-CUALLI ; ! "a small bell"
 xiuhmolpilli:xiuhmolpil N-CUALLI ; ! "a binding of the years"
@@ -1230,6 +1231,7 @@ hueyotl:hueyo N-TLĀCATL ; ! "great one"
 melahuac:melahuac N-TZONTECON ; ! "algo recto"
 
 kilo:kilo N-TZONTECON ; ! "kilo"
+litro:litro N-TZONTECON ; ! "litro"
 
 ! Pronombres?
 ocachi:ocachi N-TZONTECON ; ! "more" ! FIXME: Comprobar
@@ -1242,9 +1244,13 @@ Juan:Juan                                       NP-JUAN ;
 Francisco:Francisco                             NP-JUAN ; 
 Lorenzo:Lorenzo                                 NP-JUAN ; 
 Pedro:Pedro                                     NP-JUAN ; 
-Acolhua:Acolhua                                 NP-ACOLHUA ; 
-Xolotl:Xolotl                                   NP-ACOLHUA ; 
-Motēuczōma:Motēuczōma                           NP-ACOLHUA ;
+Acolhua:Acolhua                                 NP-NEZAHUALCOYOTL ; 
+Xolotl:Xolotl                                   NP-NEZAHUALCOYOTL ; 
+Motēuczōma:Motēuczōma                           NP-NEZAHUALCOYOTL ;
+Nezahualcoyotl:Nezahualcoyotl                   NP-NEZAHUALCOYOTL ;
+Totoquihuaztli:Totoquihuaztli                   NP-NEZAHUALCOYOTL ;
+!Tzihuacxochitl:Tzihuacxochitl                   NP-
+
 Xōchimīlco:Xōchimīlco                           NP-TENOCHTITLAN ;
 Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
 Yucatan:Yucatan                                 NP-TENOCHTITLAN ;
