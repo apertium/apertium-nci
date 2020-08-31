@@ -42,7 +42,7 @@ n:0 <=> _ %>: h u a n ;
 i:0 <=> %{o%}: %>: _ Cns ; 
 
 "Alternation in locative -c{o}"
-%{o%}:0 <=> %>: c _ .#. ; 
+%{o%}:0 <=> :Vow %>: c _ .#. ; 
 
 "Possessive nasal assimilation"
 m:n <=> i _ %>: [ c | t | n | s | y ] ;

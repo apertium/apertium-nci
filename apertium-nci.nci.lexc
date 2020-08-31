@@ -365,6 +365,10 @@ LEXICON Plural
 :%>huan                                              PossPlural ;
 :%>me                                                PlainPlural ;
 
+LEXICON Locativo
+
+%<loc%>:%>c%{o%}                                   # ;
+
 LEXICON Diminutivo
 
 %<dim%>:%>tzin                                     # ; 
@@ -372,10 +376,6 @@ LEXICON Diminutivo
 @D.Px@%<dim%>%<abs%>:@D.Px@%>tzin%>tli             # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
 %<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
-
-LEXICON Locativo
-
-%<loc%>:%>c%{o%}                                   # ;
 
 LEXICON Deriv 
                                                    Diminutivo ; 
@@ -508,6 +508,7 @@ LEXICON NP-TENOCHTITLAN
 LEXICON Rel 
 
 %<n%>%<rel%>: # ; 
+%<n%>%<rel%>: Diminutivo  ; 
 
 !+co%<n%>%<loc%>:%>co # ; ! FIXME: Orth
 !+pan%<n%>%<loc%>:%>pan # ; ! FIXME: Orth
@@ -731,6 +732,7 @@ patox:patox                                     N-PATOX ; ! "pato"
 chichi:chichi                                   N-PATOX ; ! "perro"
 
 xihuitl:xi%{u%}%{h%}                            N-CAXITL ; ! "hierba, año"
+teōxihuitl:teōxi%{u%}%{h%}                      N-CAXITL ; ! "hierba, año"
 cuahuitl:cua%{u%}%{h%}                          N-CAXITL ; ! "árbol"
 cemilhuitl:cemil%{u%}%{h%}                      N-CAXITL ; ! "un día"
 caxitl:cax                                      N-CAXITL ; ! "copa"
@@ -894,6 +896,7 @@ acuezcomatl:acuezcoma N-ATL ; ! "hole"
 āhuitzotl:āhuitzo N-ATL ; ! "water animal"
 amacozcatl:amacozca N-ATL ; ! "paper garlands"
 anahuacayotl:anahuacayo N-ATL ; ! "foreign things"
+teōxiuhyotl:teōxiuhyo N-ATL ; ! ""
 ānāhuatl:ānāhua N-ATL ; ! "round disc"
 anecuyotl:anecuyo N-ATL ; ! "paper crown"
 ātēzcatl:ātēzca N-ATL ; ! "water surface"
@@ -1233,6 +1236,7 @@ melahuac:melahuac N-TZONTECON ; ! "algo recto"
 
 kilo:kilo N-TZONTECON ; ! "kilo"
 litro:litro N-TZONTECON ; ! "litro"
+capitan:capitan N-TZONTECON ; ! "capitán"
 
 ! Pronombres?
 ocachi:ocachi N-TZONTECON ; ! "more" ! FIXME: Comprobar
@@ -1353,6 +1357,7 @@ paca:pac                                        V-TV-itta ; ! "lavar"
 mati:mat                                        V-TV-mati ; ! "saber"
 pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
 tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner"
+māctīa:māctī                                  V-TV-itta ; ! "poner"
 
 LEXICON DV 
 
