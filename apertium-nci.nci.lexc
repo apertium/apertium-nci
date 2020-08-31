@@ -1236,6 +1236,9 @@ melahuac:melahuac N-TZONTECON ; ! "algo recto"
 
 kilo:kilo N-TZONTECON ; ! "kilo"
 litro:litro N-TZONTECON ; ! "litro"
+metro:metro N-TZONTECON ; ! "metro" ! FIXME: metroh
+taximetro:taximetro N-TZONTECON ; ! ""
+centimetro:centimetro N-TZONTECON ; ! ""
 capitan:capitan N-TZONTECON ; ! "capitán"
 
 ! Pronombres?
