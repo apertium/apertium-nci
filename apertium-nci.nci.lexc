@@ -377,6 +377,20 @@ LEXICON Diminutivo
 %<dim%>%<pl%>:%>tzi%>tzin                          # ;  ! FIXME: Comprobar análisis
 %<dim%>:%>tzi%>tzin                                PossPlural ;  ! FIXME: Comprobar análisis
 
+                                                   Diminutivo2 ; 
+
+LEXICON Diminutivo2
+!-tontli	-toːntɬi	_	smallness (a compounding element that must be bound to another element; see Karttunen); this is the singular ending; the plural would be -totontin (see Carochi; see also our entry for -ton.)¶
+
+%<dim2%>:%>ton                                     # ; 
+%<dim2%>:%>ton                                     Locativo ; 
+@D.Px@%<dim2%>%<abs%>:@D.Px@%>ton%>tli             # ;  ! FIXME: Comprobar análisis ! Comprobar si se puede tener posesivo
+%<dim2%>%<pl%>:%>to%>tontin                          # ;  ! FIXME: Comprobar análisis
+%<dim2%>:%>to%>tontin                                PossPlural ;  ! FIXME: Comprobar análisis
+%<dim2%>:%>to%>tontin                                PossPlural ;  ! FIXME: Comprobar análisis
+
+
+
 LEXICON Deriv 
                                                    Diminutivo ; 
                                                    Locativo ; 
@@ -495,7 +509,11 @@ LEXICON NP-MALINTZIN
 LEXICON NP-NEZAHUALCOYOTL
 
 %<np%>%<ant%>%<m%>: # ; 
+%<np%>%<ant%>%<m%>: Diminutivo ; 
 
+LEXICON NP-SANCHEZ
+
+%<np%>%<cog%>: # ; 
 
 LEXICON NP-JUAN
 
@@ -654,6 +672,12 @@ caxtolli:caxtolli NUM ; ! ""
 
 cempōhualli:cempōhualli NUM ; ! ""
 
+
+ometzontli:ometzontli NUM ; ! "ochocientos"
+ontzontli:ontzontli NUM ; ! "ochocientos"
+
+nauhtzontli:nauhtzontli NUM ; ! "1600"
+
 ! 10. -(i)xtin. Puede agregarse -ixtin (-xtin tras vocal) a los números
 ! superiores a 1 precedidos de un prefijo posesivo para significar "los (tantos)... ".
 
@@ -712,6 +736,8 @@ tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
 otli:o                                          N-PAHTLI ; ! "camino, canal"
 ochpantli:ochpan                                N-PAHTLI ; ! "camino, canal"
 ochpantli:uchpan                                N-PAHTLI ; ! "camino, canal" ! Src/Axolotl
+
+tēlpōchtli:telpoch                              N-PAHTLI ; ! "hijo, joven, guerrero"
 
 miquiztli:miquiz                                N-MIQUIZTLI ; ! "muerte"
 
@@ -774,6 +800,7 @@ pochtēcatl:pochtēca                             N-TLĀCATL ; ! "pochteca, vend
 tzontecon:tzontecon                             N-TZONTECON ; ! "cabeza"
 
 tlahtoāni:tlahtoāni                             N-TZONTECON ; ! "rey, líder"
+tlahtoāni:tlahtohuani                           N-TZONTECON ; ! "rey, líder" ! FIXME: Comprobar
 teōpixcatlahtoāni:teōpixcatlahtoāni             N-TZONTECON ; ! ""
 
 tōnatiuh:tōnatiuh                               N-TZONTECON ; ! "sol"
@@ -1228,6 +1255,254 @@ amōlli:amōl N-CUALLI ; ! "soap "
 acualli:acual N-CUALLI ; ! "a bad thing"
 
 
+
+textli:tex N-PAHTLI ; ! "maize dough"
+tēxtli:tēx N-PAHTLI ; ! "brother-in-law "
+ohtli:oh N-PAHTLI ; ! "_"
+yēctli:yēc N-PAHTLI ; ! "something good "
+tecontōntli:tecontōn N-PAHTLI ; ! "a small jug "
+cententli:centen N-PAHTLI ; ! "a word"
+nāntli:nān N-PAHTLI ; ! "mother"
+tzotzomatli:tzotzoma N-PAHTLI ; ! "rag"
+tlatextli:tlatex N-PAHTLI ; ! "_"
+tiānquiztli:tiānquiz N-PAHTLI ; ! "market"
+āmoxtli:āmox N-PAHTLI ; ! "book"
+amoxtli:amox N-PAHTLI ; ! "a type of water plant"
+tlapactli:tlapac N-PAHTLI ; ! "a piece of cloth"
+tlamantli:tlaman N-PAHTLI ; ! "a separate thing"
+tēcuhtli:tēcuh N-PAHTLI ; ! "a lord"
+camohtli:camoh N-PAHTLI ; ! "_"
+ayohtli:ayoh N-PAHTLI ; ! "_"
+octli:oc N-PAHTLI ; ! "pulque"
+cuauhtli:cuauh N-PAHTLI ; ! "eagle"
+xoctli:xoc N-PAHTLI ; ! "pot"
+tlachipāuhtli:tlachipāuh N-PAHTLI ; ! "something purified"
+pantli:pan N-PAHTLI ; ! "a ridge"
+nemiliztli:nemiliz N-PAHTLI ; ! "life"
+tzontli:tzon N-PAHTLI ; ! "hair"
+tlatetectli:tlatetec N-PAHTLI ; ! "the warp"
+tilmatli:tilma N-PAHTLI ; ! "cloaks or lengths of cloth"
+teuhtli:teuh N-PAHTLI ; ! "dust"
+tenochtli:tenoch N-PAHTLI ; ! "a nopal or prickly pear cactus"
+ichpōchtli:ichpōch N-PAHTLI ; ! "adolescent girl or young woman"
+chōquiztli:chōquiz N-PAHTLI ; ! "weeping"
+cactli:cac N-PAHTLI ; ! "footwear"
+ātlauhtli:ātlauh N-PAHTLI ; ! "ravine"
+tzōtzopāztli:tzōtzopāz N-PAHTLI ; ! "a batten "
+tlazotli:tlazo N-PAHTLI ; ! "a precious thing"
+tahtli:tah N-PAHTLI ; ! "_"
+nextli:nex N-PAHTLI ; ! "ash"
+centlamantli:centlaman N-PAHTLI ; ! "one"
+xināchtli:xināch N-PAHTLI ; ! "seed "
+tecuachtli:tecuach N-PAHTLI ; ! "a small cape"
+popōchtli:popōch N-PAHTLI ; ! "perfume"
+pōctli:pōc N-PAHTLI ; ! "smoke"
+izquitlamantli:izquitlaman N-PAHTLI ; ! "that many parts"
+tlachpanaliztli:tlachpanaliz N-PAHTLI ; ! "sweeping "
+tēnōnōtzaliztli:tēnōnōtzaliz N-PAHTLI ; ! "admonitions "
+quetzalpatzactli:quetzalpatzac N-PAHTLI ; ! "a quetzal feather crest device"
+malcochtli:malcoch N-PAHTLI ; ! "a bending of the neck"
+ītztli:ītz N-PAHTLI ; ! "a sharp-bladed instrument of obsidian"
+cuāchtli:cuāch N-PAHTLI ; ! "large capes or cloaks"
+āyotectli:āyotec N-PAHTLI ; ! "a calabash cup"
+āpantli:āpan N-PAHTLI ; ! "a canal or water ditch "
+tzītzicāztli:tzītzicāz N-PAHTLI ; ! "nettle"
+tōptli:tōp N-PAHTLI ; ! "a coffer"
+tlexochtli:tlexoch N-PAHTLI ; ! "ember"
+tlamacēhualiztli:tlamacēhualiz N-PAHTLI ; ! "penitence"
+tlacuicuīliztli:tlacuicuīliz N-PAHTLI ; ! "a wood or stone carving"
+tapachtli:tapach N-PAHTLI ; ! "sea shell"
+netolīniliztli:netolīniliz N-PAHTLI ; ! "affliction"
+michihuauhtli:michihuauh N-PAHTLI ; ! "a certain type of amaranth "
+cācāxtli:cācāx N-PAHTLI ; ! "a carrying frame fitted to the back"
+ātōnahuiztli:ātōnahuiz N-PAHTLI ; ! "fever"
+ātōlātzintli:ātōlātzin N-PAHTLI ; ! "a bit of atole "
+yōllotli:yōllo N-PAHTLI ; ! "the heart"
+xōpaniztli:xōpaniz N-PAHTLI ; ! "summer "
+xīxtli:xīx N-PAHTLI ; ! "human feces "
+xelhuāztli:xelhuāz N-PAHTLI ; ! "small brush "
+tzonhuāztli:tzonhuāz N-PAHTLI ; ! "a snare for capturing something in hunting "
+tzihuactli:tzihuac N-PAHTLI ; ! "spine"
+tompiatli:tompia N-PAHTLI ; ! "a basket woven from palm leaves"
+tlexīctli:tlexīc N-PAHTLI ; ! "fire pit"
+tlequiquiztli:tlequiquiz N-PAHTLI ; ! "firearm"
+tlazotilmatli:tlazotilma N-PAHTLI ; ! "_"
+tlaxapochtli:tlaxapoch N-PAHTLI ; ! "a hole"
+tlatzintli:tlatzin N-PAHTLI ; ! "the lower part"
+tlatlapāntli:tlatlapān N-PAHTLI ; ! "_"
+tlatequipanōliztli:tlatequipanōliz N-PAHTLI ; ! "service"
+tlatentli:tlaten N-PAHTLI ; ! "a trimming from the edge of a garment or from maize"
+tlapechtli:tlapech N-PAHTLI ; ! "platform"
+tlanōnōtzaliztli:tlanōnōtzaliz N-PAHTLI ; ! "_"
+tlanēxtli:tlanēx N-PAHTLI ; ! "light"
+tlaneltiliztli:tlaneltiliz N-PAHTLI ; ! "affirmation"
+tlamatiliztli:tlamatiliz N-PAHTLI ; ! "knowledge"
+tlamachtli:tlamach N-PAHTLI ; ! "embroidery"
+tlāltepoztli:tlāltepoz N-PAHTLI ; ! "a hoe or plow "
+tlahuiztli:tlahuiz N-PAHTLI ; ! "battle device"
+tlaēlēhuiliztli:tlaēlēhuiliz N-PAHTLI ; ! "greed"
+tlacoyoctli:tlacoyoc N-PAHTLI ; ! "hole"
+tlācotli:tlāco N-PAHTLI ; ! "a slave "
+tinontli:tinon N-PAHTLI ; ! "a mute person"
+texotli:texo N-PAHTLI ; ! "the color blue "
+tetlatemoliztli:tetlatemoliz N-PAHTLI ; ! "_"
+tētlācamachiliztli:tētlācamachiliz N-PAHTLI ; ! "obedience"
+teonacaztli:teonacaz N-PAHTLI ; ! ""divine ear" spice "
+tēmoxtli:tēmox N-PAHTLI ; ! "individual meaning not known"
+temachtiliztli:temachtiliz N-PAHTLI ; ! "_"
+tatapatli:tatapa N-PAHTLI ; ! "worn and mended fabric "
+quetzalitztli:quetzalitz N-PAHTLI ; ! "_"
+pāquiliztli:pāquiliz N-PAHTLI ; ! "happiness"
+ozomatli:ozoma N-PAHTLI ; ! "a monkey"
+nocheztli:nochez N-PAHTLI ; ! "cochineal"
+māxitlaztli:māxitlaz N-PAHTLI ; ! "a ring for a finger "
+mātzatzaztli:mātzatzaz N-PAHTLI ; ! "the ring on a finger "
+matzatzaztli:matzatzaz N-PAHTLI ; ! "a finger ring known to have been worn by merchants "
+huictli:huic N-PAHTLI ; ! "indigenous digging stick with a flat blade"
+huentli:huen N-PAHTLI ; ! "an offering "
+huāuhtli:huāuh N-PAHTLI ; ! "amaranth "
+huactli:huac N-PAHTLI ; ! "a bird"
+huactli:huac N-PAHTLI ; ! "something dry"
+eztli:ez N-PAHTLI ; ! "blood"
+eztli:ez N-PAHTLI ; ! "_"
+cuauhtlapechtli:cuauhtlapech N-PAHTLI ; ! "scaffold"
+cuātzontli:cuātzon N-PAHTLI ; ! "head hair"
+cuatzontli:cuatzon N-PAHTLI ; ! "bang"
+cocoxcatzintli:cocoxcatzin N-PAHTLI ; ! "handicapped"
+ciahuiztli:ciahuiz N-PAHTLI ; ! "fatigue"
+chicāhualiztli:chicāhualiz N-PAHTLI ; ! "strength"
+centlatlapantli:centlatlapan N-PAHTLI ; ! "a piece of something "
+āxīxtli:āxīx N-PAHTLI ; ! "urine"
+atecochtli:atecoch N-PAHTLI ; ! "cistern"
+zacapechtli:zacapech N-PAHTLI ; ! "a bed of straw"
+yohuallapializtli:yohuallapializ N-PAHTLI ; ! "keeping watch at night "
+yeyāntli:yeyān N-PAHTLI ; ! "a place"
+yehuatli:yehua N-PAHTLI ; ! "this "
+yēcnemiliztli:yēcnemiliz N-PAHTLI ; ! "proper living"
+yecacehuaztli:yecacehuaz N-PAHTLI ; ! "pocket-handkerchief "
+yauhtli:yauh N-PAHTLI ; ! "a plant that smells and tastes of anis"
+xopechtli:xopech N-PAHTLI ; ! "the foundation of a building"
+tzicuahuaztli:tzicuahuaz N-PAHTLI ; ! "a hair comb "
+totomonaliztli:totomonaliz N-PAHTLI ; ! "pustules and blisters"
+totli:to N-PAHTLI ; ! "sparrow hawk  "
+tolcuextli:tolcuex N-PAHTLI ; ! "_"
+tōctli:tōc N-PAHTLI ; ! "a young maize plant"
+tlotli:tlo N-PAHTLI ; ! "hawk"
+tletlāliliztli:tletlāliliz N-PAHTLI ; ! "lighting of fires "
+tlaxiccahualiztli:tlaxiccahualiz N-PAHTLI ; ! "the act of leaving something undone out of carelessness or negligence "
+tlaxexeloliztli:tlaxexeloliz N-PAHTLI ; ! "_"
+tlatzontli:tlatzon N-PAHTLI ; ! "something tailored"
+tlatzontectli:tlatzontec N-PAHTLI ; ! "a weapon"
+tlatelchīhualiztli:tlatelchīhualiz N-PAHTLI ; ! "words of scoffing or reproach"
+tlatectli:tlatec N-PAHTLI ; ! "something cut "
+tlatectli:tlatec N-PAHTLI ; ! "_"
+tlatecpāntli:tlatecpān N-PAHTLI ; ! "something that has been ordered"
+tlapolōliztli:tlapolōliz N-PAHTLI ; ! "_"
+tlapōhualiztli:tlapōhualiz N-PAHTLI ; ! "a census"
+tlapetlauhtli:tlapetlauh N-PAHTLI ; ! "_"
+tlapapatiliztli:tlapapatiliz N-PAHTLI ; ! "_"
+tlapapatiliztli:tlapapatiliz N-PAHTLI ; ! "_"
+tlapantli:tlapan N-PAHTLI ; ! "a flat roof "
+tlamaniztli:tlamaniz N-PAHTLI ; ! "plane"
+tlamaliztli:tlamaliz N-PAHTLI ; ! "_"
+tlamachtiliztli:tlamachtiliz N-PAHTLI ; ! "instruction "
+tlālmantli:tlālman N-PAHTLI ; ! "flat places"
+tlaīxyeyecōliztli:tlaīxyeyecōliz N-PAHTLI ; ! "_"
+tlaīxtli:tlaīx N-PAHTLI ; ! "uphill stretch"
+tlaīxnāmiquiliztli:tlaīxnāmiquiliz N-PAHTLI ; ! "confrontation "
+tlahuitectli:tlahuitec N-PAHTLI ; ! "_"
+tlāhuānaliztli:tlāhuānaliz N-PAHTLI ; ! "the act of drinking "
+tlahtlaniliztli:tlahtlaniliz N-PAHTLI ; ! "_"
+tlacohtli:tlacoh N-PAHTLI ; ! "stick"
+tlachtli:tlach N-PAHTLI ; ! "indigenous ball court"
+tlaceliliztli:tlaceliliz N-PAHTLI ; ! "the act of receiving what someone is giving "
+tlācamictīliztli:tlācamictīliz N-PAHTLI ; ! "_"
+tlaāntli:tlaān N-PAHTLI ; ! "_"
+tiamictli:tiamic N-PAHTLI ; ! "_"
+tezontli:tezon N-PAHTLI ; ! "type of porous"
+teyectenehualiztli:teyectenehualiz N-PAHTLI ; ! "the praise with which one applauds another person "
+tētolīniliztli:tētolīniliz N-PAHTLI ; ! "affliction"
+tequipanōliztli:tequipanōliz N-PAHTLI ; ! "labor"
+teponāztli:teponāz N-PAHTLI ; ! "a log drum"
+teocihuiliztli:teocihuiliz N-PAHTLI ; ! "hunger"
+tenextli:tenex N-PAHTLI ; ! "lime "
+tencualactli:tencualac N-PAHTLI ; ! "saliva "
+tencualactli:tencualac N-PAHTLI ; ! "spittle"
+tenaliztli:tenaliz N-PAHTLI ; ! "_"
+tēīxcomaquiliztli:tēīxcomaquiliz N-PAHTLI ; ! "_"
+teicaliliztli:teicaliliz N-PAHTLI ; ! "_"
+tecochtli:tecoch N-PAHTLI ; ! "grave"
+tatli:ta N-PAHTLI ; ! "father "
+quiquiztli:quiquiz N-PAHTLI ; ! "conch shell trumpet "
+quēnamicātzintli:quēnamicātzin N-PAHTLI ; ! "a respectful greeting"
+poyomatli:poyoma N-PAHTLI ; ! "a narcotic"
+pixquiztli:pixquiz N-PAHTLI ; ! "the crop"
+pilalactli:pilalac N-PAHTLI ; ! "boy "
+pepetlaquiliztli:pepetlaquiliz N-PAHTLI ; ! "a shimmer"
+ōntlamantli:ōntlaman N-PAHTLI ; ! "two things"
+nexīntli:nexīn N-PAHTLI ; ! "appearance"
+netōtiliztli:netōtiliz N-PAHTLI ; ! "dancing "
+netlacuitlahuiliztli:netlacuitlahuiliz N-PAHTLI ; ! "taking care of thing"
+netēmachīliztli:netēmachīliz N-PAHTLI ; ! "hope "
+nepōhualiztli:nepōhualiz N-PAHTLI ; ! "pride"
+neolīniliztli:neolīniliz N-PAHTLI ; ! "_"
+nenemiliztli:nenemiliz N-PAHTLI ; ! "the act of walking about"
+nenamiquiliztli:nenamiquiliz N-PAHTLI ; ! "_"
+nenāmictiliztli:nenāmictiliz N-PAHTLI ; ! "marriage"
+nemachtiliztli:nemachtiliz N-PAHTLI ; ! "a lesson"
+neltiliztli:neltiliz N-PAHTLI ; ! "truth "
+necnotecaliztli:necnotecaliz N-PAHTLI ; ! "_"
+nechichihualiztli:nechichihualiz N-PAHTLI ; ! "devices or adornments that are put together and worn "
+necēhuiliztli:necēhuiliz N-PAHTLI ; ! "_"
+necaliliztli:necaliliz N-PAHTLI ; ! "_"
+necāhualiztli:necāhualiz N-PAHTLI ; ! "a farewell"
+nacaztli:nacaz N-PAHTLI ; ! "ear"
+momoztli:momoz N-PAHTLI ; ! "platform or raised altar for sacrificial offerings and displays in pre-conquest style"
+miztli:miz N-PAHTLI ; ! "mountain lion"
+mayānaliztli:mayānaliz N-PAHTLI ; ! "hunger"
+matzatli:matza N-PAHTLI ; ! "pineapple"
+matlactli:matlac N-PAHTLI ; ! "ten"
+māquīztli:māquīz N-PAHTLI ; ! "a bangle"
+macuilpohualxiuhtiliztli:macuilpohualxiuhtiliz N-PAHTLI ; ! "a century"
+iztlactli:iztlac N-PAHTLI ; ! "saliva"
+izcahuitli:izcahui N-PAHTLI ; ! "certain little worms that live in lagoons "
+ixnamiquiztli:ixnamiquiz N-PAHTLI ; ! "a dispute"
+ixhuetzquiliztli:ixhuetzquiliz N-PAHTLI ; ! "the act of laughing with someone else"
+itzcactli:itzcac N-PAHTLI ; ! "obsidian sandals"
+imaxtli:imax N-PAHTLI ; ! "_"
+imaxtli:imax N-PAHTLI ; ! "a paper loincloth worn by the image in the round of Huitzilopochtli"
+ihīyōhuiliztli:ihīyōhuiliz N-PAHTLI ; ! "torment"
+icnīuhtli:icnīuh N-PAHTLI ; ! "friend"
+icihuiliztli:icihuiliz N-PAHTLI ; ! "promptness"
+īchtli:īch N-PAHTLI ; ! "a traditional type of thread made from maguey fiber "
+ichtequiliztli:ichtequiliz N-PAHTLI ; ! "robbery "
+huitztli:huitz N-PAHTLI ; ! "a thorn"
+huitztli:huitz N-PAHTLI ; ! "_"
+huitzōctli:huitzōc N-PAHTLI ; ! "a pointed oaken pole for levering sod loose or planting seeds"
+etextli:etex N-PAHTLI ; ! "a bean or lima bean dough or paste "
+cuetlāchtli:cuetlāch N-PAHTLI ; ! "wolf"
+cuauhtequiliztli:cuauhtequiliz N-PAHTLI ; ! "the cutting of wood "
+cuauhpitzactli:cuauhpitzac N-PAHTLI ; ! "_"
+cotoctli:cotoc N-PAHTLI ; ! "the crust of bread "
+cintli:cin N-PAHTLI ; ! "dried ears of maize or corn"
+cihuamiztli:cihuamiz N-PAHTLI ; ! "the lioness"
+ciammiquiliztli:ciammiquiliz N-PAHTLI ; ! "weariness or fatigue"
+chichtli:chich N-PAHTLI ; ! "an owl"
+centli:cen N-PAHTLI ; ! "ear"
+cecuiztli:cecuiz N-PAHTLI ; ! "cold"
+!catli:ca N-PAHTLI ; ! "asking what is that from? or"
+canauhtli:canauh N-PAHTLI ; ! "duck "
+caltechtli:caltech N-PAHTLI ; ! "side of a house"
+ayecōliztli:ayecōliz N-PAHTLI ; ! "something insufferable"
+ātēntli:ātēn N-PAHTLI ; ! "seashore or river bank"
+āpīztli:āpīz N-PAHTLI ; ! "hunger"
+āpīzmiquiliztli:āpīzmiquiliz N-PAHTLI ; ! "hunger"
+apaztli:apaz N-PAHTLI ; ! "earthen tub"
+amiquiztli:amiquiz N-PAHTLI ; ! "thirst"
+amapatlachtli:amapatlach N-PAHTLI ; ! "pieces of paper with feathers attached using colored threads "
+amaneapantli:amaneapan N-PAHTLI ; ! "a rich cloak worn by the indigenous nobility "
+ācaxtōntli:ācaxtōn N-PAHTLI ; ! "a fountain with water "
+
 huēy:huēy N-HUĒY ; ! "big, great" ! ce huey xonacatl	1 cebolla grande
 huēyi:huēyi N-HUĒY ; ! "big great" ! hueyi in tlacualchihualoyan	la cocina es grande
 hueyotl:hueyo N-TLĀCATL ; ! "great one"
@@ -1255,9 +1530,12 @@ Pedro:Pedro                                     NP-JUAN ;
 Acolhua:Acolhua                                 NP-NEZAHUALCOYOTL ; 
 Xolotl:Xolotl                                   NP-NEZAHUALCOYOTL ; 
 Motēuczōma:Motēuczōma                           NP-NEZAHUALCOYOTL ;
+Cuauhtemoc:Cuauhtemoc                           NP-NEZAHUALCOYOTL ;
 Nezahualcoyotl:Nezahualcoyotl                   NP-NEZAHUALCOYOTL ;
 Totoquihuaztli:Totoquihuaztli                   NP-NEZAHUALCOYOTL ;
 !Tzihuacxochitl:Tzihuacxochitl                   NP-
+
+Sanchez:Sanchez                                 NP-SANCHEZ ; 
 
 Xōchimīlco:Xōchimīlco                           NP-TENOCHTITLAN ;
 Tenochtitlan:Tenochtitlan                       NP-TENOCHTITLAN ;
@@ -1353,6 +1631,7 @@ LEXICON TVʼ
 
 molhuia:molhui                                  V-TV-itta ; ! "decir (reverencial)"
 itta:itt                                        V-TV-itta ; ! "ver"
+cotōna:cotōn                                    V-TV-itta ; ! "cortar"
 chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
 cua:cu                                          V-TV-itta ; ! "comer"
 itoa:ito                                        V-TV-itta ; ! "decir"
