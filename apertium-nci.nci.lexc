@@ -261,6 +261,13 @@ LEXICON V-IV-cochi
 !%<v%>%<iv%>:%{i%}    BASE3 ; 
 !%<v%>%<iv%>:     BASE2 ; 
 
+LEXICON V-IV-yayā
+
+%<v%>%<iv%>:ā  BASE1 ; 
+%<v%>%<iv%>:ā  BASE3 ; 
+%<v%>%<iv%>:   BASE2 ; 
+
+
 LEXICON V-IV-quiza
 
 %<v%>%<iv%>:a  BASE1 ; 
@@ -312,6 +319,11 @@ LEXICON V-TV-tlāliā
 %<v%>%<tv%>:ī   BASE2 ; 
 
 
+LEXICON V-TV-tequipachoā
+
+%<v%>%<tv%>:oā  BASE1 ; 
+%<v%>%<tv%>:o  BASE3 ; 
+%<v%>%<tv%>:o   BASE2 ; 
 
 LEXICON V-DV
 
@@ -444,6 +456,14 @@ LEXICON N-CALLI
 %<n%>:                                             # ;
 %<n%>:%>li                                         Plural ;
 %<n%>:                                             Deriv ;
+
+LEXICON N-NOCHI
+
+@D.Px@%<n%>%<abs%>:@D.Px@%>i                       # ;
+%<n%>:                                             # ;
+%<n%>:%>tin                                        PlainPlural ;
+%<n%>:                                             Deriv ;
+
 
 LEXICON N-CHAPOLIN
 
@@ -743,6 +763,7 @@ tēlpōchtli:telpoch                              N-PAHTLI ; ! "hijo, joven, gue
 miquiztli:miquiz                                N-MIQUIZTLI ; ! "muerte"
 
 calli:cal                                       N-CALLI ; ! "casa"
+tlamachtilcalli:tlamachtilcal                   N-CALLI ; ! "escuela"
 mīlli:mīl                                       N-CALLI ; ! "campo"
 teōcalli:teōcal                                 N-CALLI ; ! "templo"
 
@@ -782,6 +803,7 @@ pilli:pil                                       N-CUALLI ; ! "niño"
 cihuapilli:cihuapil                             N-CUALLI ; ! "niña"
 mācēhualli:mācēhual                             N-CUALLI ; ! "campesino"
 citlālli:citlāl                                 N-CUALLI ; ! "estrella"
+tlamachtīlli:tlamachtīlli                       N-CUALLI ; ! "estudiante"
 
 ! tēuctli (plural tētēuctin, possessed -tēcuiyō) 
 !tēuctli:tē%{u%}c                                N-TĒUCTLI ; 
@@ -1510,6 +1532,8 @@ huēyi:huēyi N-HUĒY ; ! "big great" ! hueyi in tlacualchihualoyan	la cocina es
 huēyi:huehuēyi N-PLUR-REDUP ; ! 
 hueyotl:hueyo N-TLĀCATL ; ! "great one"
 
+mahuiztic:mahuiztic N-HUĒY ; ! "admirable"
+
 melahuac:melahuac N-TZONTECON ; ! "algo recto"
 
 kilo:kilo N-TZONTECON ; ! "kilo"
@@ -1522,6 +1546,8 @@ capitan:capitan N-TZONTECON ; ! "capitán"
 ! Pronombres?
 ocachi:ocachi N-TZONTECON ; ! "more" ! FIXME: Comprobar
 nochi:nochi N-TZONTECON ; ! "todo" ! FIXME: Comprobar
+cequi:cequi N-TZONTECON ; ! "alguien" ! FIXME: Comprobar
+nochi:noch N-NOCHI ; ! "todo" ! FIXME: Comprobar
 
 LEXICON Propios 
 
@@ -1613,6 +1639,8 @@ cochi:coch                                      V-IV-cochi ; ! "dormir"
 miqui:miqu                                      V-IV-cochi ; ! "morir" ! mic-qui
 yōli:yōl                                        V-IV-cochi ; ! "vivir"
 tzatzi:tzatz                                    V-IV-cochi ; ! "gritar"
+quemi:quem                                    V-IV-cochi ; ! "vestirse
+tequiti:tequit                                V-IV-cochi ; ! ""
 ēhua:ēhu                                        V-IV-quiza ; ! "irse, salir"
 cuīca:cuīc                                      V-IV-quiza ; ! "cantar"
 huēya:huēy                                      V-IV-quiza ; ! "crecer"
@@ -1631,6 +1659,8 @@ tlaneltoca:tlaneltoc                          V-IV-quiza ; ! "creer"
 tlapohua:tlapo%{u%}%{h%}                      V-IV-quiza ; ! "contar, rezar"
 tlapehua:tlape%{u%}%{h%}                      V-IV-quiza ; ! ""
 tlatzotzona:tlatzotzon                      V-IV-quiza ; ! ""
+moteca:motec                                V-IV-quiza ; ! "establecerse"
+yayā:yay                                    V-IV-yayā ; ! "ir"
 
 LEXICON TV 
 
@@ -1643,15 +1673,21 @@ itta:itt                                        V-TV-itta ; ! "ver"
 cotōna:cotōn                                    V-TV-itta ; ! "cortar"
 chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
 tepehua:tepe%{u%}%{h%}                          V-TV-itta ; ! "conquistar"
+pēhua:pē%{u%}%{h%}                              V-TV-itta ; ! "comenzar, empezar"
 cua:cu                                          V-TV-itta ; ! "comer"
 itoa:ito                                        V-TV-itta ; ! "decir"
 paca:pac                                        V-TV-itta ; ! "lavar"
 mati:mat                                        V-TV-mati ; ! "saber"
+chichi:chich                                    V-TV-mati ; ! "reparar"
 pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
 tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner, sentar"
+aquiā:aqu                                     V-TV-tlāliā ; ! "colocar"
+calaquiā:calaqu                              V-TV-tlāliā ; ! "hacer entrar"
 māctīa:māctī                                  V-TV-itta ; ! "poner"
+machtiā:macht                                  V-TV-tlāliā ; ! "aprender"
 tōca:tōc                                      V-TV-itta ; ! "enterrar"
 mamaca:mamac                                  V-TV-itta ; ! "distribuir"
+tequipachoā:tequipach                         V-TV-tequipachoā ; ! "estar triste, estar ancioso"
 
 
 LEXICON DV 
