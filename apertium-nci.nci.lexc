@@ -1583,6 +1583,8 @@ quin:quin                                       ADV ; ! "entonces"
 nochipa:nochipa                                 ADV ; ! "para siempre"
 occepa:occepa                                   ADV ; ! "otra vez, de nuevo"
 
+aocmō:aocmō                                     ADV ; ! "ya"
+
 cenca:cenca                                     ADV ; ! "muy"
 
 huel:huel                                       ADV ; ! "bien, muy, mucho"
@@ -1622,6 +1624,10 @@ tlacuiloā:tlacuil                               V-IV-tlahtoā ; ! "escribir"
 pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"
 yāuh:yāuh                                       V-IV-huītz ; ! "ir"
 huītz:huītz                                     V-IV-huītz ; ! "venir"
+tlaneltoca:tlaneltoc                          V-IV-quiza ; ! "creer"
+tlapohua:tlapo%{u%}%{h%}                      V-IV-quiza ; ! "contar, rezar"
+tlapehua:tlape%{u%}%{h%}                      V-IV-quiza ; ! ""
+tlatzotzona:tlatzotzon                      V-IV-quiza ; ! ""
 
 LEXICON TV 
 
@@ -1633,6 +1639,7 @@ molhuia:molhui                                  V-TV-itta ; ! "decir (reverencia
 itta:itt                                        V-TV-itta ; ! "ver"
 cotōna:cotōn                                    V-TV-itta ; ! "cortar"
 chīhua:chī%{u%}%{h%}                            V-TV-itta ; ! "hacer"
+tepehua:tepe%{u%}%{h%}                          V-TV-itta ; ! "conquistar"
 cua:cu                                          V-TV-itta ; ! "comer"
 itoa:ito                                        V-TV-itta ; ! "decir"
 paca:pac                                        V-TV-itta ; ! "lavar"
@@ -1640,6 +1647,8 @@ mati:mat                                        V-TV-mati ; ! "saber"
 pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
 tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner"
 māctīa:māctī                                  V-TV-itta ; ! "poner"
+tōca:tōc                                      V-TV-itta ; ! "enterrar"
+
 
 LEXICON DV 
 
