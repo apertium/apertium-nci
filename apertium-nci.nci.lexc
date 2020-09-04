@@ -237,6 +237,7 @@ LEXICON BASE1
 LEXICON BASE2 ! Breve
 
 @R.Sa.Sg@%<pret%>:@R.Sa.Sg@%>%{c%}   #  ;  
+@R.Sa.Pl@%<pret%>:@R.Sa.Pl@%>que # ; 
 @R.Sa.Pl@%<pret%>:@R.Sa.Pl@%>queh # ; 
 @R.Sa.Sg@%<plu%>:@R.Sa.Sg@%>ca   #  ;  
 @R.Sa.Pl@%<plu%>:@R.Sa.Pl@%>ca%>h # ; 
@@ -840,6 +841,7 @@ comatl:coma    N-ATL ; ! "vessel, container"
 cōmitl:cōmi    N-ATL ; ! "olla"
 conētlācatl:conētlāca    N-ATL ; ! ""
 conētl:cone    N-ATL ; ! "a child, boy or girl"
+conētl:cocone    N-PLUR-REDUP ; ! ""
 copitl:copi    N-ATL ; ! "firefly or glow worm"
 cōtztetl:cōtzte    N-ATL ; ! "calf of the leg"
 coyōtl:coyō    N-ATL ; ! "coyote"
@@ -1505,6 +1507,7 @@ amaneapantli:amaneapan N-PAHTLI ; ! "a rich cloak worn by the indigenous nobilit
 
 huēy:huēy N-HUĒY ; ! "big, great" ! ce huey xonacatl	1 cebolla grande
 huēyi:huēyi N-HUĒY ; ! "big great" ! hueyi in tlacualchihualoyan	la cocina es grande
+huēyi:huehuēyi N-PLUR-REDUP ; ! 
 hueyotl:hueyo N-TLĀCATL ; ! "great one"
 
 melahuac:melahuac N-TZONTECON ; ! "algo recto"
@@ -1645,9 +1648,10 @@ itoa:ito                                        V-TV-itta ; ! "decir"
 paca:pac                                        V-TV-itta ; ! "lavar"
 mati:mat                                        V-TV-mati ; ! "saber"
 pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
-tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner"
+tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner, sentar"
 māctīa:māctī                                  V-TV-itta ; ! "poner"
 tōca:tōc                                      V-TV-itta ; ! "enterrar"
+mamaca:mamac                                  V-TV-itta ; ! "distribuir"
 
 
 LEXICON DV 
