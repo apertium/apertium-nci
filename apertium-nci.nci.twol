@@ -28,7 +28,7 @@ Rules
 "Epenthesis of {i} before consonants"
 %{i%}:i <=> _ [ %>: ]+ :Cns ;
     except 
-      %{k%}: %{w%}: _ ;
+      %{k%}:c %{w%}: _ %>: ;
 
 !@ t {i}:i > > {k}:c {w}:0 {i}:0 > c h ī h u a
 
@@ -70,10 +70,14 @@ m:n <=> i _ %>: [ c | t | n | s | y ] ;
 
 "Orthographic rule for /k/, -c-/-qu(i)- (1)"
 %{k%}:c <=> _ %{w%}: %{i%}: %>: Cns ;
+  except 
+        .#. %>: _ %{w%}: %{i%}: %>: c h ;
 
 !@ > m i {k}:c {w}:0 {i}:0 > q u i
 
 !@ n {i}:i > > m i {k}:q {w}:u {i}:i > z
+
+!@ > {k}:q {w}:u {i}:i > c h ī {u}:h {h}:u a > z > q u e
 
 "Orthographic rule for /k/, -c-/-qu(i)- (2)"
 %{w%}:0 <=> %{k%}:c _ ;
