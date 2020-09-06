@@ -1564,6 +1564,122 @@ Nezahualcoyotl:Nezahualcoyotl                   NP-NEZAHUALCOYOTL ;
 Totoquihuaztli:Totoquihuaztli                   NP-NEZAHUALCOYOTL ;
 !Tzihuacxochitl:Tzihuacxochitl                   NP-
 
+!Acol
+!Acotlehuac
+!Acuetla
+!Acuixoc
+!Amiztlato
+!Caltecatl
+!Chalchiuh
+!Chalchiuhcoatl
+!Chichatlapal
+!Chilhuan
+!Cihuatotocatl
+!Cocyatl
+!Coyolton
+!Cozauh
+!Cozcamichiuhtecatl
+!Cuacuauh
+!Cualchamitl
+!Cuata
+!Cuauhtlapochin
+!Cuauhtliztac
+!Cuauhyaotl
+!Cuecuex
+!Cuilol
+!Ecachoca
+!Epcoatl
+!Ezmalli
+!Huecamecatl
+!Huehuetecatl
+!Hueiteuctli
+!Huetl
+!Huitznecahual
+!Icnoxopan
+!Ilcahualoc
+!Itzcotocatl
+!Itzmalli
+!Maciuhnemi
+!Macuilcoatl
+!Mamaz
+!Matlalihuitl
+!Metzal
+!Mimich
+!Mixcoatlailotlac
+!Mizquihua
+!Mocnoteca
+!Moyocoya
+!Nacxitl
+!Nahualecatl
+!Nemitl
+!Nochhuetl
+!Ocelocoatl
+!Olopatzicatl
+!Opochmacuex
+!Pacoatl
+!Pancololo
+!Payan
+!Pihuiyol
+!Popocatl
+!Poton
+!Quenmachoc
+!Quetzalteuctli
+!Quiachton
+!Quichichihui
+!Tecayehuatl
+!Tecocoa
+!Tecpanecatl
+!Tehueltecac
+!Telpoch
+!Tematl
+!Tenicahuehue
+!Tenoch
+!Teoquichtiuh
+!Tepeyacan
+!Tequizallan
+!Tetlepizac
+!Teuhcatl
+!Teyauh
+!Ticocnahuacatl
+!Tlacatecpanecatl
+!Tlacateotzin
+!Tlacochquiauh
+!Tlacochtemoc
+!Tlacochui
+!Tlailotlac
+!Tlapaltecatl
+!Tlapayauh
+!Tlapoca
+!Tlatlazaloc
+!Tlatol
+!Tlilanhuehue
+!Tlilpontoncatzin
+!Tlilquen
+!Tlohui
+!Tochhua
+!Tochnenemi
+!Tocual
+!Tocuatl
+!Tonacamacuex
+!Tonal
+!Tonatlahui
+!Tonecocal
+!Tozihui
+!Tozpan
+!Tziuhtla
+!Xochichimal
+!Xochinahual
+!Xochipan
+!Xochiquen
+!Xochiteotl
+!Xochtonal
+!Xolotecatl
+!Yancuitl
+!Yaoteuh
+!Yaotlhuehue
+!Yaquin
+
+
 Sanchez:Sanchez                                 NP-SANCHEZ ; 
 
 Xōchimīlco:Xōchimīlco                           NP-TENOCHTITLAN ;
@@ -1683,6 +1799,7 @@ pāctiā:pāct                                    V-TV-tlāliā ; ! "gustar"
 tlāliā:tlāl                                   V-TV-tlāliā ; ! "poner, sentar"
 aquiā:aqu                                     V-TV-tlāliā ; ! "colocar"
 calaquiā:calaqu                              V-TV-tlāliā ; ! "hacer entrar"
+teōtiā:teōt                              V-TV-tlāliā ; ! ""
 māctīa:māctī                                  V-TV-itta ; ! "poner"
 machtiā:macht                                  V-TV-tlāliā ; ! "aprender"
 tōca:tōc                                      V-TV-itta ; ! "enterrar"
