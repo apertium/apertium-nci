@@ -407,6 +407,7 @@ LEXICON Diminutivo2
 LEXICON Deriv 
                                                    Diminutivo ; 
                                                    Locativo ; 
+%<cmp%>%+:%>                                       Relacionales ;
 
 LEXICON N-PLUR-REDUP
 
@@ -757,6 +758,7 @@ tēcpantli:tēcpan                                N-TEŌPANTLI ; ! "palacio"
 otli:o                                          N-PAHTLI ; ! "camino, canal"
 ochpantli:ochpan                                N-PAHTLI ; ! "camino, canal"
 ochpantli:uchpan                                N-PAHTLI ; ! "camino, canal" ! Src/Axolotl
+chololiztli:chololiz                            N-PAHTLI ; ! "fuga"
 
 tēlpōchtli:telpoch                              N-PAHTLI ; ! "hijo, joven, guerrero"
 
@@ -1766,6 +1768,7 @@ quiza:quiz                                      V-IV-quiza ; ! ""
 tlacua:tlacu                                    V-IV-quiza ; ! "comer"
 chōca:chōc                                      V-IV-quiza ; ! "llorar"
 tlatlahuana:tlatlahuan                          V-IV-quiza ; ! "beber alcohol"
+tēca:tēc                                        V-IV-quiza ; ! ""
 tlahtoā:tlaht                                   V-IV-tlahtoā ; ! "hablar"
 tlacuiloā:tlacuil                               V-IV-tlahtoā ; ! "escribir"
 pāctiā:pāct                                     V-IV-pāctiā ; ! "gustar"
